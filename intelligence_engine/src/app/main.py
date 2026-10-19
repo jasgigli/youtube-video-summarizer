@@ -124,27 +124,3 @@ def get_daily_top5(db: Session = Depends(get_db)):
         })
     return {"status": "success", "count": len(results), "top_5": results}
 
-# Serve Frontend static files if web_app exists
-web_app_dir = settings.WEB_APP_PATH
-if not web_app_dir.exists():
-    web_app_dir = settings.BASE_DIR / "web_app"
-
-if web_app_dir.exists() and (web_app_dir / "index.html").exists():
-    app.mount("/static", StaticFiles(directory=str(web_app_dir)), name="static")
-
-    @app.get("/")
-    def serve_frontend():
-        return FileResponse(web_app_dir / "index.html")
-
-    @app.get("/app")
-    def serve_frontend_app():
-        return FileResponse(web_app_dir / "index.html")
-else:
-    @app.get("/")
-    def root():
-        return {
-            "status": "online",
-            "app": settings.APP_NAME,
-            "version": settings.VERSION,
-            "message": "Omnichannel Intelligence Platform Backend is running. Access /docs for interactive Swagger API Explorer."
-        }

@@ -1,5 +1,7 @@
 import uuid
 import asyncio
+import hashlib
+import json
 from datetime import datetime, timedelta, timezone
 from typing import Dict, Any, List, Set, Optional
 from fastapi import WebSocket
@@ -310,8 +312,19 @@ class JobService:
                         if cfg.get("name") not in missing_names
                     ]
 
-        job.append_log(f"Starting Omnichannel Ingestion across {len(feed_configs)} enabled data feeds...", "INFO")
+        platform_queues: Dict[str, List[Dict[str, Any]]] = {}
+        for cfg in feed_configs:
+            platform = str(cfg.get("platform") or cfg.get("type") or "unknown")
+            platform_queues.setdefault(platform, []).append(cfg)
+
+        job.append_log(
+            f"Starting sequential Omnichannel processing across "
+            f"{len(platform_queues)} platforms and {len(feed_configs)} enabled data feeds...",
+            "INFO"
+        )
         all_items: List[OmnichannelItem] = []
+        cluster_signatures: Dict[str, str] = {}
+        known_cluster_ids: Set[str] = set()
 
         # Instantiate adapters
         reddit_adapter = RedditAdapter()
@@ -374,90 +387,119 @@ class JobService:
                 logger.exception(f"Error ingesting feed {cfg.get('name')}: {e}")
                 return cfg.get("name", cfg.get("url", "Unknown source")), e
 
-        for feed_index, cfg in enumerate(feed_configs, 1):
-            source_name = cfg.get("name", cfg.get("url", "Unknown source"))
-            job.current_step = f"Fetching feed [{feed_index}/{len(feed_configs)}]: {source_name[:60]}"
-            db.commit()
-            await cls._emit_progress(job, f"Fetching feed {feed_index}/{len(feed_configs)}")
-            try:
-                source_name, result = await asyncio.wait_for(
-                    fetch_feed(cfg),
-                    timeout=cls.FEED_FETCH_TIMEOUT_SECONDS
-                )
-            except asyncio.TimeoutError:
-                result = TimeoutError(
-                    f"Feed exceeded the {cls.FEED_FETCH_TIMEOUT_SECONDS}-second fetch limit."
-                )
-
-            if isinstance(result, Exception):
-                job.failed_items += 1
-                job.append_log(f"Source failed: {source_name}: {result}", "ERROR")
-            elif result:
-                all_items.extend(result)
-                job.append_log(f"Collected {len(result)} item(s) from {source_name}.", "INFO")
-            else:
-                job.append_log(f"No recent items returned by {source_name}.", "WARNING")
-
-        job.append_log(f"Ingested {len(all_items)} total signals from across the ecosystem.", "INFO")
-        job.current_step = f"Deduplicating & Clustering {len(all_items)} signals into topic threads..."
-        db.commit()
-        await cls._emit_progress(job, "Clustering multi-source stories")
-
-        # 2. Cluster & Deduplicate into cohesive topic threads
-        clusters = ClusteringService.cluster_items(all_items)
-        job.append_log(f"Grouped into {len(clusters)} distinct tech topic threads.", "INFO")
-
-        # 3. Synthesize & Generate Deep-Dive Reports
-        target_clusters = clusters
-        job.total_items += len(target_clusters)
-        db.commit()
-
         provider_setting = db.query(Setting).filter(Setting.key == "default_provider").first()
         provider = provider_setting.value if provider_setting else settings.DEFAULT_PROVIDER
         key_setting = db.query(Setting).filter(Setting.key == f"{provider}_api_key").first()
         api_key = key_setting.value if key_setting else None
 
-        for idx, cluster in enumerate(target_clusters, 1):
-            job.current_step = f"Synthesizing [{idx}/{len(target_clusters)}]: {cluster.canonical_title[:45]}..."
-            job.append_log(f"Synthesizing topic '{cluster.canonical_title[:45]}' (Platforms: {', '.join(cluster.platforms).upper()})", "INFO")
-            db.commit()
-            await cls._emit_progress(job, f"Synthesizing topic {idx}")
-
-            try:
-                # LLM multi-source synthesis
+        for platform_index, (platform, platform_feeds) in enumerate(platform_queues.items(), 1):
+            platform_items: List[OmnichannelItem] = []
+            for feed_index, cfg in enumerate(platform_feeds, 1):
+                source_name = cfg.get("name", cfg.get("url", "Unknown source"))
+                job.current_step = (
+                    f"Fetching {platform} feed [{feed_index}/{len(platform_feeds)}]: "
+                    f"{source_name[:60]}"
+                )
+                db.commit()
+                await cls._emit_progress(job, f"Fetching {platform} feed {feed_index}/{len(platform_feeds)}")
                 try:
-                    analysis = await asyncio.wait_for(
-                        OmnichannelIntelligenceService.synthesize_cluster_report(
-                            cluster,
-                            provider=provider,
-                            api_key=api_key
-                        ),
-                        timeout=cls.SYNTHESIS_TIMEOUT_SECONDS
+                    source_name, result = await asyncio.wait_for(
+                        fetch_feed(cfg),
+                        timeout=cls.FEED_FETCH_TIMEOUT_SECONDS
                     )
                 except asyncio.TimeoutError:
-                    job.append_log(
-                        f"Synthesis timed out for '{cluster.canonical_title[:45]}'; "
-                        "saving a source-only report and continuing.",
-                        "WARNING"
+                    result = TimeoutError(
+                        f"Feed exceeded the {cls.FEED_FETCH_TIMEOUT_SECONDS}-second fetch limit."
                     )
-                    analysis = OmnichannelIntelligenceService._build_source_only_synthesis(cluster)
-                
-                # Save Comprehensive Markdown Document
-                saved_md = await asyncio.to_thread(
-                    OmnichannelIntelligenceService.save_omnichannel_markdown,
-                    cluster=cluster,
-                    analysis=analysis
+
+                if isinstance(result, Exception):
+                    job.failed_items += 1
+                    job.append_log(f"Source failed: {source_name}: {result}", "ERROR")
+                elif result:
+                    platform_items.extend(result)
+                    job.append_log(f"Collected {len(result)} item(s) from {source_name}.", "INFO")
+                else:
+                    job.append_log(f"No recent items returned by {source_name}.", "WARNING")
+
+            all_items.extend(platform_items)
+            clusters = ClusteringService.cluster_items(all_items)
+            new_cluster_ids = {cluster.cluster_id for cluster in clusters} - known_cluster_ids
+            job.total_items += len(new_cluster_ids)
+            known_cluster_ids.update(new_cluster_ids)
+            db.commit()
+
+            changed_clusters = []
+            for cluster in clusters:
+                signature = hashlib.sha256(
+                    json.dumps(
+                        [item.to_dict() for item in cluster.items],
+                        ensure_ascii=False,
+                        sort_keys=True
+                    ).encode("utf-8")
+                ).hexdigest()
+                if cluster_signatures.get(cluster.cluster_id) != signature:
+                    changed_clusters.append((cluster, signature))
+
+            job.append_log(
+                f"Platform {platform} finished fetching; "
+                f"summarizing {len(changed_clusters)} new or updated topic(s) before continuing.",
+                "INFO"
+            )
+
+            for idx, (cluster, signature) in enumerate(changed_clusters, 1):
+                job.current_step = (
+                    f"Summarizing {platform} [{idx}/{len(changed_clusters)}]: "
+                    f"{cluster.canonical_title[:45]}..."
                 )
-
-
-                job.processed_items += 1
-                job.append_log(f"Saved Omnichannel Intelligence: {saved_md.name}", "INFO")
+                job.append_log(
+                    f"Synthesizing topic '{cluster.canonical_title[:45]}' "
+                    f"(Platforms: {', '.join(cluster.platforms).upper()})",
+                    "INFO"
+                )
                 db.commit()
+                await cls._emit_progress(job, f"Summarizing {platform} topic {idx}")
 
-            except Exception as e:
-                job.failed_items += 1
-                job.append_log(f"Error synthesizing topic '{cluster.canonical_title}': {str(e)}", "ERROR")
-                db.commit()
+                try:
+                    try:
+                        analysis = await asyncio.wait_for(
+                            OmnichannelIntelligenceService.synthesize_cluster_report(
+                                cluster,
+                                provider=provider,
+                                api_key=api_key
+                            ),
+                            timeout=cls.SYNTHESIS_TIMEOUT_SECONDS
+                        )
+                    except asyncio.TimeoutError:
+                        job.append_log(
+                            f"Synthesis timed out for '{cluster.canonical_title[:45]}'; "
+                            "saving a source-only report and continuing.",
+                            "WARNING"
+                        )
+                        analysis = OmnichannelIntelligenceService._build_source_only_synthesis(cluster)
+
+                    saved_md = await asyncio.to_thread(
+                        OmnichannelIntelligenceService.save_omnichannel_markdown,
+                        cluster=cluster,
+                        analysis=analysis
+                    )
+
+                    cluster_signatures[cluster.cluster_id] = signature
+                    job.processed_items += 1
+                    job.append_log(f"Saved Omnichannel Intelligence: {saved_md.name}", "INFO")
+                    db.commit()
+
+                except Exception as e:
+                    job.failed_items += 1
+                    job.append_log(
+                        f"Error synthesizing topic '{cluster.canonical_title}': {str(e)}",
+                        "ERROR"
+                    )
+                    db.commit()
+
+            job.append_log(
+                f"Finished platform {platform} ({platform_index}/{len(platform_queues)}).",
+                "INFO"
+            )
 
         # 4. Compile Consolidated Daily Omnichannel Brief (DAILY_BRIEF.md)
         job.current_step = "Compiling Consolidated Daily Omnichannel Brief (DAILY_BRIEF.md)..."

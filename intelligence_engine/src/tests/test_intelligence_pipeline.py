@@ -2,12 +2,14 @@ import unittest
 from datetime import datetime, timezone
 from tempfile import TemporaryDirectory
 from pathlib import Path
-from unittest.mock import patch
+from types import SimpleNamespace
+from unittest.mock import AsyncMock, patch
 
 from src.app.config import settings
 from src.app.services.adapters.base_adapter import OmnichannelItem
 from src.app.services.clustering_service import ClusteringService
 from src.app.services.feed_registry_service import FeedRegistryService
+from src.app.services.job_service import JobService
 from src.app.services.omnichannel_intelligence_service import OmnichannelIntelligenceService
 
 
@@ -126,6 +128,107 @@ class TestIntelligencePipeline(unittest.TestCase):
         self.assertEqual(len(names), len(set(names)))
         self.assertTrue(any("Nigeria" in name for name in names))
         self.assertTrue(any("Apple" in name for name in names))
+
+
+class TestSequentialOmnichannelQueue(unittest.IsolatedAsyncioTestCase):
+    async def test_summarizes_each_platform_before_fetching_the_next_and_continues_after_failure(self):
+        feeds = [
+            {"name": "Blog One", "platform": "blog", "type": "rss", "url": "https://example.com/one"},
+            {"name": "Broken Blog", "platform": "blog", "type": "rss", "url": "https://example.com/broken"},
+            {"name": "Blog Two", "platform": "blog", "type": "rss", "url": "https://example.com/two"},
+            {"name": "Community", "platform": "reddit", "type": "reddit_json", "url": "https://example.com/reddit"}
+        ]
+        events = []
+
+        class FakeQuery:
+            def filter(self, *args):
+                return self
+
+            def all(self):
+                return []
+
+            def first(self):
+                return None
+
+        class FakeDb:
+            def query(self, model):
+                return FakeQuery()
+
+            def commit(self):
+                pass
+
+        async def fetch_blog(config, limit):
+            events.append(f"fetch:{config['name']}")
+            if config["name"] == "Broken Blog":
+                raise RuntimeError("source unavailable")
+            return [make_item(
+                "OpenAI launches a new model" if config["name"] == "Blog One" else "Rust compiler update",
+                "https://example.com/model" if config["name"] == "Blog One" else "https://example.com/rust",
+                config["name"]
+            )]
+
+        async def fetch_reddit(config, limit):
+            events.append("fetch:Community")
+            return [make_item(
+                "OpenAI launches a new model",
+                "https://example.com/model",
+                "Community",
+                platform="reddit"
+            )]
+
+        async def synthesize(cluster, provider, api_key):
+            events.append(f"synthesize:{cluster.canonical_title}")
+            return {
+                "topic_title": cluster.canonical_title,
+                "executive_summary": "Summary from collected source material."
+            }
+
+        def save(cluster, analysis):
+            events.append(f"save:{cluster.canonical_title}")
+            return Path(f"{cluster.cluster_id}.md")
+
+        job = SimpleNamespace(
+            total_items=0,
+            processed_items=0,
+            failed_items=0,
+            current_step="",
+            append_log=lambda message, level="INFO": None
+        )
+
+        with (
+            patch.object(FeedRegistryService, "load_feeds", return_value=feeds),
+            patch("src.app.services.job_service.RSSBlogAdapter") as rss_adapter,
+            patch("src.app.services.job_service.RedditAdapter") as reddit_adapter,
+            patch.object(
+                OmnichannelIntelligenceService,
+                "synthesize_cluster_report",
+                new=AsyncMock(side_effect=synthesize)
+            ),
+            patch.object(
+                OmnichannelIntelligenceService,
+                "save_omnichannel_markdown",
+                side_effect=save
+            ),
+            patch.object(JobService, "_emit_progress", new=AsyncMock()),
+            patch(
+                "src.app.services.job_service.DailyDigestService.compile_daily_brief",
+                new=AsyncMock(return_value=None)
+            )
+        ):
+            rss_adapter.return_value.fetch_items.side_effect = fetch_blog
+            reddit_adapter.return_value.fetch_items.side_effect = fetch_reddit
+
+            await JobService._run_sync_omnichannel(FakeDb(), job)
+
+        reddit_fetch_index = events.index("fetch:Community")
+        self.assertEqual(events[:3], ["fetch:Blog One", "fetch:Broken Blog", "fetch:Blog Two"])
+        self.assertTrue(any(event.startswith("save:") for event in events[:reddit_fetch_index]))
+        self.assertEqual(events[-2:], [
+            "synthesize:OpenAI launches a new model",
+            "save:OpenAI launches a new model"
+        ])
+        self.assertEqual(job.failed_items, 1)
+        self.assertEqual(job.processed_items, 4)
 
 
 if __name__ == "__main__":

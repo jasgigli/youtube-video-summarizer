@@ -21,18 +21,7 @@ SUMMARIES_DIR.mkdir(parents=True, exist_ok=True)
 
 
 
-WEB_APP_DIR = WORKSPACE_ROOT / "web_app"
-WEB_APP_DIR.mkdir(parents=True, exist_ok=True)
 
-class Settings(BaseSettings):
-    APP_NAME: str = "Tech & AI Omnichannel Intelligence Platform"
-    VERSION: str = "3.0.0"
-    DEBUG: bool = False
-    BASE_DIR: Path = BASE_DIR
-    DATA_PATH: Path = DATA_DIR
-    DATABASE_URL: str = f"sqlite:///{(DATA_DIR / 'app.db').as_posix()}"
-    SUMMARIES_PATH: Path = SUMMARIES_DIR
-    WEB_APP_PATH: Path = WEB_APP_DIR
     
    
     
