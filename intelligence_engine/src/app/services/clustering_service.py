@@ -120,6 +120,15 @@ class ClusteringService:
         entity_boost = 0.2 if shared_entities and len(intersection) >= 2 else 0.0
         return jaccard + entity_boost
 
+    @staticmethod
+    def _make_cluster_id(item: OmnichannelItem, normalized_url: str) -> str:
+        identity = normalized_url or "|".join((
+            item.platform.casefold(),
+            item.source_name.casefold(),
+            " ".join(item.title.casefold().split())
+        ))
+        return "cluster_" + hashlib.sha256(identity.encode("utf-8")).hexdigest()[:12]
+
     @classmethod
     def cluster_items(cls, items: List[OmnichannelItem]) -> List[TopicCluster]:
         """
@@ -131,11 +140,21 @@ class ClusteringService:
         # 1. Topic clustering, retaining separate source records for duplicate URLs.
         clusters: List[TopicCluster] = []
         url_clusters: Dict[str, TopicCluster] = {}
+        seen_items = set()
 
         for item in items:
             item_tokens = cls._extract_tokens(item.title)
             item_entities = cls._extract_entities(f"{item.title} {item.summary_hint}")
             normalized_url = cls._normalize_url(item.url)
+            source_identity = normalized_url or item.id or " ".join(item.title.casefold().split())
+            item_identity = (
+                item.platform.casefold(),
+                item.source_name.casefold(),
+                source_identity
+            )
+            if item_identity in seen_items:
+                continue
+            seen_items.add(item_identity)
 
             best_match = url_clusters.get(normalized_url) if normalized_url else None
             best_score = 0.0
@@ -169,7 +188,7 @@ class ClusteringService:
                 if len(item.title) > len(best_match.canonical_title) and item.platform in ("frontier_ai", "blog"):
                     best_match.canonical_title = item.title
             else:
-                cid = "cluster_" + hashlib.md5(item.title.encode("utf-8")).hexdigest()[:10]
+                cid = cls._make_cluster_id(item, normalized_url)
                 new_cluster = TopicCluster(
                     cluster_id=cid,
                     canonical_title=item.title,

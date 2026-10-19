@@ -61,6 +61,9 @@ class WebSocketConnectionManager:
 ws_manager = WebSocketConnectionManager()
 
 class JobService:
+    FEED_FETCH_TIMEOUT_SECONDS = 20
+    SYNTHESIS_TIMEOUT_SECONDS = 65
+
     """
     Background job execution coordinator.
     Ensures fault tolerance: errors on a single video or channel are isolated.
@@ -322,8 +325,6 @@ class JobService:
             api_key=youtube_key_setting.value if youtube_key_setting else settings.YOUTUBE_API_KEY
         )
 
-        fetch_semaphore = asyncio.Semaphore(8)
-
         async def fetch_feed(cfg):
             ftype = cfg.get("type", "rss")
             platform = cfg.get("platform", "blog")
@@ -342,23 +343,22 @@ class JobService:
                 if limit < 1:
                     raise ValueError("Feed item limit must be greater than zero.")
 
-                async with fetch_semaphore:
-                    if ftype in ("x_account", "linkedin_company"):
-                        items = await social_adapter.fetch_items(cfg, limit=limit)
-                    elif platform == "youtube":
-                        items = await youtube_adapter.fetch_items(cfg, limit=limit)
-                    elif ftype == "web_page":
-                        items = await rss_adapter.fetch_web_page(cfg, limit=limit)
-                    elif ftype == "reddit_json" or platform == "reddit":
-                        items = await reddit_adapter.fetch_items(cfg, limit=limit)
-                    elif ftype == "hn_api" or platform == "hackernews":
-                        items = await hn_adapter.fetch_items(cfg, limit=limit)
-                    elif ftype == "github_trending" or platform == "github":
-                        items = await github_adapter.fetch_items(cfg, limit=limit)
-                    elif platform in ("twitch", "vimeo"):
-                        items = await twitch_vimeo_adapter.fetch_items(cfg, limit=limit)
-                    else:
-                        items = await rss_adapter.fetch_items(cfg, limit=limit)
+                if ftype in ("x_account", "linkedin_company"):
+                    items = await social_adapter.fetch_items(cfg, limit=limit)
+                elif platform == "youtube":
+                    items = await youtube_adapter.fetch_items(cfg, limit=limit)
+                elif ftype == "web_page":
+                    items = await rss_adapter.fetch_web_page(cfg, limit=limit)
+                elif ftype == "reddit_json" or platform == "reddit":
+                    items = await reddit_adapter.fetch_items(cfg, limit=limit)
+                elif ftype == "hn_api" or platform == "hackernews":
+                    items = await hn_adapter.fetch_items(cfg, limit=limit)
+                elif ftype == "github_trending" or platform == "github":
+                    items = await github_adapter.fetch_items(cfg, limit=limit)
+                elif platform in ("twitch", "vimeo"):
+                    items = await twitch_vimeo_adapter.fetch_items(cfg, limit=limit)
+                else:
+                    items = await rss_adapter.fetch_items(cfg, limit=limit)
 
                 max_age_days = cfg.get("max_age_days")
                 if max_age_days is not None:
@@ -374,9 +374,21 @@ class JobService:
                 logger.exception(f"Error ingesting feed {cfg.get('name')}: {e}")
                 return cfg.get("name", cfg.get("url", "Unknown source")), e
 
-        tasks = [fetch_feed(cfg) for cfg in feed_configs]
-        results = await asyncio.gather(*tasks)
-        for source_name, result in results:
+        for feed_index, cfg in enumerate(feed_configs, 1):
+            source_name = cfg.get("name", cfg.get("url", "Unknown source"))
+            job.current_step = f"Fetching feed [{feed_index}/{len(feed_configs)}]: {source_name[:60]}"
+            db.commit()
+            await cls._emit_progress(job, f"Fetching feed {feed_index}/{len(feed_configs)}")
+            try:
+                source_name, result = await asyncio.wait_for(
+                    fetch_feed(cfg),
+                    timeout=cls.FEED_FETCH_TIMEOUT_SECONDS
+                )
+            except asyncio.TimeoutError:
+                result = TimeoutError(
+                    f"Feed exceeded the {cls.FEED_FETCH_TIMEOUT_SECONDS}-second fetch limit."
+                )
+
             if isinstance(result, Exception):
                 job.failed_items += 1
                 job.append_log(f"Source failed: {source_name}: {result}", "ERROR")
@@ -405,21 +417,6 @@ class JobService:
         key_setting = db.query(Setting).filter(Setting.key == f"{provider}_api_key").first()
         api_key = key_setting.value if key_setting else None
 
-        synthesis_semaphore = asyncio.Semaphore(4)
-
-        async def synthesize_with_limit(cluster: TopicCluster):
-            async with synthesis_semaphore:
-                return await OmnichannelIntelligenceService.synthesize_cluster_report(
-                    cluster,
-                    provider=provider,
-                    api_key=api_key
-                )
-
-        synthesis_tasks = [
-            asyncio.create_task(synthesize_with_limit(cluster))
-            for cluster in target_clusters
-        ]
-
         for idx, cluster in enumerate(target_clusters, 1):
             job.current_step = f"Synthesizing [{idx}/{len(target_clusters)}]: {cluster.canonical_title[:45]}..."
             job.append_log(f"Synthesizing topic '{cluster.canonical_title[:45]}' (Platforms: {', '.join(cluster.platforms).upper()})", "INFO")
@@ -428,7 +425,22 @@ class JobService:
 
             try:
                 # LLM multi-source synthesis
-                analysis = await synthesis_tasks[idx - 1]
+                try:
+                    analysis = await asyncio.wait_for(
+                        OmnichannelIntelligenceService.synthesize_cluster_report(
+                            cluster,
+                            provider=provider,
+                            api_key=api_key
+                        ),
+                        timeout=cls.SYNTHESIS_TIMEOUT_SECONDS
+                    )
+                except asyncio.TimeoutError:
+                    job.append_log(
+                        f"Synthesis timed out for '{cluster.canonical_title[:45]}'; "
+                        "saving a source-only report and continuing.",
+                        "WARNING"
+                    )
+                    analysis = OmnichannelIntelligenceService._build_source_only_synthesis(cluster)
                 
                 # Save Comprehensive Markdown Document
                 saved_md = await asyncio.to_thread(
