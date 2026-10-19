@@ -300,8 +300,7 @@ Curious to hear the community's thoughts on how this affects production architec
         video_id: str,
         summary_data: Dict[str, Any]
     ) -> Path:
-        """
-       
+        """Generates and saves a set of platform-specific social content files."""
         clean_title = cls.sanitize_filename(video_title) or f"post_{video_id}"
         file_path = dest_dir / f"{clean_title}.md"
 
@@ -415,13 +414,7 @@ This directory contains pre-formatted, platform-tailored content (LinkedIn, Twit
         sources: List[str],
         analysis: Dict[str, Any]
     ) -> Path:
-        """
-        Generates a comprehensive 1-click publishing suite for an omnichannel topic cluster:
-        - Twitter/X Thread
-        - LinkedIn Executive Post
-        - Reddit Engineering Discussion
-        - Slack/Discord Developer Bulletin
-   
+        """Generates a publishing suite for an omnichannel topic cluster."""
 
         clean_title = cls.sanitize_filename(topic_title)
         topic_dir = folder / clean_title
@@ -641,4 +634,3 @@ Body:
             "linkedin_post": linkedin_post,
             "reddit_post": reddit_post
         }
-
