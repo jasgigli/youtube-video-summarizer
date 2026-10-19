@@ -35,7 +35,7 @@ class SocialMediaAdapter(BaseAdapter):
         if not handle:
             raise ValueError(f"X source '{feed_config.get('name')}' has no account handle.")
 
-        headers = {"Authorization": f"Bearer {token}"}
+        headers = {"Authorization": "Bearer " + token}
         async with httpx.AsyncClient(timeout=15.0) as client:
             user_response = await client.get(
                 f"https://api.x.com/2/users/by/username/{quote(handle)}",
@@ -118,7 +118,7 @@ class SocialMediaAdapter(BaseAdapter):
             response = await client.get(
                 "https://api.linkedin.com/rest/posts",
                 headers={
-                    "Authorization": f"Bearer {token}",
+                    "Authorization": "Bearer " + token,
                     "LinkedIn-Version": settings.LINKEDIN_API_VERSION,
                     "X-Restli-Protocol-Version": "2.0.0"
                 },

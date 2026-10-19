@@ -61,15 +61,15 @@ class WebSocketConnectionManager:
 ws_manager = WebSocketConnectionManager()
 
 class JobService:
-    FEED_FETCH_TIMEOUT_SECONDS = 20
-    SYNTHESIS_TIMEOUT_SECONDS = 65
-
     """
     Background job execution coordinator.
     Ensures fault tolerance: errors on a single video or channel are isolated.
     Fetches latest videos from channels in channels.json, categorizes them,
     synthesizes tailored summaries, and stores them in Markdown format.
     """
+
+    FEED_FETCH_TIMEOUT_SECONDS = 20
+    SYNTHESIS_TIMEOUT_SECONDS = 65
 
     @classmethod
     async def create_and_run_job(

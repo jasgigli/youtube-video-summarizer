@@ -21,10 +21,10 @@
 
 ### 2. Intelligent Processing Workflow
 
-1. **Fetch & Enrich:** Reads enabled feeds, uses source-specific API adapters, and extracts article text from configured RSS sources where available.
-2. **Deduplicate & Cluster:** Groups corroborating reports while retaining separate source evidence and keeping distinct developments about the same company separate.
-3. **Key Information Extraction:** Uses the configured Gemini, OpenAI, Anthropic, or Ollama provider to summarize collected evidence. If the provider is unavailable, it writes a clearly labeled source-only report rather than inventing claims.
-4. **Markdown Output:**
+1. **Fetch & Enrich:** Reads enabled feeds in registry order, one at a time, uses source-specific API adapters, and extracts article text from configured RSS sources where available. An individual feed is skipped after a 20-second timeout or on failure; empty feeds are skipped immediately so later feeds still run.
+2. **Deduplicate & Cluster:** Removes repeated items from the same source, groups corroborating reports while retaining separate source evidence, and keeps distinct developments about the same company separate.
+3. **Key Information Extraction:** Summarizes one deduplicated topic at a time with the configured Gemini, OpenAI, Anthropic, or Ollama provider. Synthesis is bounded to 65 seconds per topic. If the provider is unavailable or times out, the engine writes a clearly labeled source-only report rather than inventing claims.
+4. **Markdown Output:** Writes each topic report before advancing to the next topic, updating the index entry for that report rather than creating duplicate entries.
    - **Individual Topic Deep Dives (`.md`):** Formatted in `summaries/YYYY-MM-DD/[Topic_Title].md`.
    - **Consolidated Daily Briefing (`DAILY_BRIEF.md`):** Cross-source trend summary in `summaries/YYYY-MM-DD/DAILY_BRIEF.md`.
 

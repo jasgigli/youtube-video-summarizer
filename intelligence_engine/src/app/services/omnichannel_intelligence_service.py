@@ -145,7 +145,7 @@ class OmnichannelIntelligenceService:
                     response = await cls._post_with_retry(
                         client,
                         "https://api.openai.com/v1/chat/completions",
-                        headers={"Authorization": f"Bearer {api_key}"},
+                        headers={"Authorization": "Bearer " + api_key},
                         payload={
                             "model": settings.DEFAULT_MODEL_OPENAI,
                             "messages": [
@@ -284,12 +284,19 @@ class OmnichannelIntelligenceService:
         clean_title = MarkdownStorageService.sanitize_filename(analysis.get("topic_title", cluster.canonical_title))
         if not clean_title:
             clean_title = f"topic_{cluster.cluster_id}"
-        file_path = date_folder / f"{clean_title}.md"
-        if file_path.exists():
-            existing_content = file_path.read_text(encoding="utf-8", errors="replace")
-            marker = f"<!-- cluster-id: {cluster.cluster_id} -->"
-            if marker not in existing_content:
-                file_path = date_folder / f"{clean_title}-{cluster.cluster_id[-8:]}.md"
+        marker = f"<!-- cluster-id: {cluster.cluster_id} -->"
+        file_path = next(
+            (
+                candidate for candidate in date_folder.glob("*.md")
+                if marker in candidate.read_text(encoding="utf-8", errors="replace")
+            ),
+            None
+        )
+        if file_path is None:
+            file_path = date_folder / f"{clean_title}.md"
+            if file_path.exists():
+                cluster_suffix = cluster.cluster_id.replace("cluster_", "", 1)
+                file_path = date_folder / f"{clean_title}-{cluster_suffix}.md"
 
         pkt_time_str = MarkdownStorageService.format_pkt_datetime(datetime.now(timezone.utc))
         platforms_badges = " ".join([f"`{p.upper()}`" for p in sorted(cluster.platforms)])

@@ -255,7 +255,7 @@ class LLMService:
         model = self.model_name or settings.DEFAULT_MODEL_OPENAI
         url = "https://api.openai.com/v1/chat/completions"
         headers = {
-            "Authorization": f"Bearer {key}",
+            "Authorization": "Bearer " + key,
             "Content-Type": "application/json"
         }
         payload = {

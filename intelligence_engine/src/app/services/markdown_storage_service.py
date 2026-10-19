@@ -214,7 +214,7 @@ class MarkdownStorageService:
                 lines[matching_row] = new_row
                 with open(index_file, "w", encoding="utf-8") as f:
                     f.writelines(lines)
-            elif video_url not in content:
+            else:
                 table_split_idx = next(
                     (i + 1 for i, line in enumerate(lines) if line.startswith("| :---")),
                     -1

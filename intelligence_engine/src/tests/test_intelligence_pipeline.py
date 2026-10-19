@@ -1,5 +1,8 @@
 import unittest
 from datetime import datetime, timezone
+from tempfile import TemporaryDirectory
+from pathlib import Path
+from unittest.mock import patch
 
 from src.app.config import settings
 from src.app.services.adapters.base_adapter import OmnichannelItem
@@ -54,6 +57,40 @@ class TestIntelligencePipeline(unittest.TestCase):
         self.assertEqual(len(clusters[0].items), 2)
         self.assertEqual(clusters[0].platforms, {"blog", "hackernews"})
         self.assertEqual(clusters[0].sources, {"Tech News", "Hacker News"})
+
+    def test_duplicate_item_from_same_source_is_only_kept_once(self):
+        item = make_item(
+            "OpenAI launches GPT-5",
+            "https://news.example/story?utm_source=feed",
+            "Tech News"
+        )
+
+        clusters = ClusteringService.cluster_items([item, item])
+
+        self.assertEqual(len(clusters), 1)
+        self.assertEqual(len(clusters[0].items), 1)
+
+    def test_distinct_cluster_reports_with_same_title_get_distinct_files(self):
+        clusters = ClusteringService.cluster_items([
+            make_item("OpenAI releases a model", "https://news.example/model", "Source A"),
+            make_item("Google opens a new office", "https://news.example/office", "Source B")
+        ])
+        analysis = {
+            "topic_title": "Daily technology update",
+            "executive_summary": "A short factual summary.",
+            "key_entities": []
+        }
+
+        with TemporaryDirectory() as temp_dir, patch.object(settings, "SUMMARIES_PATH", Path(temp_dir)):
+            report_paths = [
+                OmnichannelIntelligenceService.save_omnichannel_markdown(cluster, analysis)
+                for cluster in clusters
+            ]
+            OmnichannelIntelligenceService.save_omnichannel_markdown(clusters[0], analysis)
+
+            self.assertEqual(len(set(report_paths)), 2)
+            self.assertTrue(all(path.exists() for path in report_paths))
+            self.assertEqual(len(list(report_paths[0].parent.glob("*.md"))), 2)
 
     def test_same_company_does_not_merge_unrelated_developments(self):
         items = [
