@@ -21,10 +21,10 @@
 
 ### 2. Intelligent Processing Workflow
 
-1. **Fetch & Enrich:** Processes enabled feeds in a sequential platform queue, using source-specific API adapters and extracting article text from configured RSS sources where available. A platform's feeds are fetched one at a time; a failed feed is logged and skipped so the rest of the queue continues. Each feed has a 20-second timeout.
-2. **Deduplicate & Cluster:** After fetching a platform's feeds, removes repeated items and groups related developments before moving to the next platform. When later platforms report a previously summarized story, its report is updated with the additional source evidence.
+1. **Fetch & Enrich:** Processes enabled feeds in registry order, one at a time, using source-specific API adapters and extracting article text from configured RSS sources where available. A failed feed is logged and skipped so the rest of the queue continues. Each feed has a 20-second timeout.
+2. **Deduplicate & Cluster:** After each feed, removes repeated items and groups related developments before moving to the next feed. When a later feed corroborates a previously summarized story, its report is updated with the additional source evidence.
 3. **Key Information Extraction:** Summarizes one deduplicated topic at a time with the configured Gemini, OpenAI, Anthropic, or Ollama provider. Synthesis is bounded to 65 seconds per topic. If the provider is unavailable or times out, the engine writes a clearly labeled source-only report rather than inventing claims. A failed topic is logged and does not block the queue.
-4. **Markdown Output:** Saves each topic report before starting the next platform, updating the index entry for that report rather than creating duplicate entries.
+4. **Markdown Output:** Saves each topic report before starting the next feed, updating the index entry for that report rather than creating duplicate entries.
    - **Individual Topic Deep Dives (`.md`):** Formatted in `summaries/YYYY-MM-DD/[Topic_Title].md`.
    - **Consolidated Daily Briefing (`DAILY_BRIEF.md`):** Cross-source trend summary in `summaries/YYYY-MM-DD/DAILY_BRIEF.md`.
 

@@ -131,7 +131,7 @@ class TestIntelligencePipeline(unittest.TestCase):
 
 
 class TestSequentialOmnichannelQueue(unittest.IsolatedAsyncioTestCase):
-    async def test_summarizes_each_platform_before_fetching_the_next_and_continues_after_failure(self):
+    async def test_summarizes_each_feed_before_fetching_the_next_and_continues_after_failure(self):
         feeds = [
             {"name": "Blog One", "platform": "blog", "type": "rss", "url": "https://example.com/one"},
             {"name": "Broken Blog", "platform": "blog", "type": "rss", "url": "https://example.com/broken"},
@@ -222,13 +222,14 @@ class TestSequentialOmnichannelQueue(unittest.IsolatedAsyncioTestCase):
 
         reddit_fetch_index = events.index("fetch:Community")
         self.assertEqual(events[:3], ["fetch:Blog One", "fetch:Broken Blog", "fetch:Blog Two"])
-        self.assertTrue(any(event.startswith("save:") for event in events[:reddit_fetch_index]))
+        self.assertLess(events.index("save:OpenAI launches a new model"), events.index("fetch:Broken Blog"))
+        self.assertLess(events.index("save:Rust compiler update"), reddit_fetch_index)
         self.assertEqual(events[-2:], [
             "synthesize:OpenAI launches a new model",
             "save:OpenAI launches a new model"
         ])
         self.assertEqual(job.failed_items, 1)
-        self.assertEqual(job.processed_items, 4)
+        self.assertEqual(job.processed_items, 3)
 
 
 if __name__ == "__main__":

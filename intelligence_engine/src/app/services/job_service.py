@@ -312,14 +312,8 @@ class JobService:
                         if cfg.get("name") not in missing_names
                     ]
 
-        platform_queues: Dict[str, List[Dict[str, Any]]] = {}
-        for cfg in feed_configs:
-            platform = str(cfg.get("platform") or cfg.get("type") or "unknown")
-            platform_queues.setdefault(platform, []).append(cfg)
-
         job.append_log(
-            f"Starting sequential Omnichannel processing across "
-            f"{len(platform_queues)} platforms and {len(feed_configs)} enabled data feeds...",
+            f"Starting sequential Omnichannel queue across {len(feed_configs)} enabled data feeds...",
             "INFO"
         )
         all_items: List[OmnichannelItem] = []
@@ -392,36 +386,34 @@ class JobService:
         key_setting = db.query(Setting).filter(Setting.key == f"{provider}_api_key").first()
         api_key = key_setting.value if key_setting else None
 
-        for platform_index, (platform, platform_feeds) in enumerate(platform_queues.items(), 1):
-            platform_items: List[OmnichannelItem] = []
-            for feed_index, cfg in enumerate(platform_feeds, 1):
-                source_name = cfg.get("name", cfg.get("url", "Unknown source"))
-                job.current_step = (
-                    f"Fetching {platform} feed [{feed_index}/{len(platform_feeds)}]: "
-                    f"{source_name[:60]}"
+        for feed_index, cfg in enumerate(feed_configs, 1):
+            platform = str(cfg.get("platform") or cfg.get("type") or "unknown")
+            source_name = cfg.get("name", cfg.get("url", "Unknown source"))
+            job.current_step = (
+                f"Fetching {platform} feed [{feed_index}/{len(feed_configs)}]: "
+                f"{source_name[:60]}"
+            )
+            db.commit()
+            await cls._emit_progress(job, f"Fetching feed {feed_index}/{len(feed_configs)}")
+            try:
+                source_name, result = await asyncio.wait_for(
+                    fetch_feed(cfg),
+                    timeout=cls.FEED_FETCH_TIMEOUT_SECONDS
                 )
-                db.commit()
-                await cls._emit_progress(job, f"Fetching {platform} feed {feed_index}/{len(platform_feeds)}")
-                try:
-                    source_name, result = await asyncio.wait_for(
-                        fetch_feed(cfg),
-                        timeout=cls.FEED_FETCH_TIMEOUT_SECONDS
-                    )
-                except asyncio.TimeoutError:
-                    result = TimeoutError(
-                        f"Feed exceeded the {cls.FEED_FETCH_TIMEOUT_SECONDS}-second fetch limit."
-                    )
+            except asyncio.TimeoutError:
+                result = TimeoutError(
+                    f"Feed exceeded the {cls.FEED_FETCH_TIMEOUT_SECONDS}-second fetch limit."
+                )
 
-                if isinstance(result, Exception):
-                    job.failed_items += 1
-                    job.append_log(f"Source failed: {source_name}: {result}", "ERROR")
-                elif result:
-                    platform_items.extend(result)
-                    job.append_log(f"Collected {len(result)} item(s) from {source_name}.", "INFO")
-                else:
-                    job.append_log(f"No recent items returned by {source_name}.", "WARNING")
+            if isinstance(result, Exception):
+                job.failed_items += 1
+                job.append_log(f"Source failed: {source_name}: {result}", "ERROR")
+            elif result:
+                all_items.extend(result)
+                job.append_log(f"Collected {len(result)} item(s) from {source_name}.", "INFO")
+            else:
+                job.append_log(f"No recent items returned by {source_name}.", "WARNING")
 
-            all_items.extend(platform_items)
             clusters = ClusteringService.cluster_items(all_items)
             new_cluster_ids = {cluster.cluster_id for cluster in clusters} - known_cluster_ids
             job.total_items += len(new_cluster_ids)
@@ -441,14 +433,14 @@ class JobService:
                     changed_clusters.append((cluster, signature))
 
             job.append_log(
-                f"Platform {platform} finished fetching; "
-                f"summarizing {len(changed_clusters)} new or updated topic(s) before continuing.",
+                f"Feed {source_name} finished; summarizing "
+                f"{len(changed_clusters)} new or updated topic(s) before continuing.",
                 "INFO"
             )
 
             for idx, (cluster, signature) in enumerate(changed_clusters, 1):
                 job.current_step = (
-                    f"Summarizing {platform} [{idx}/{len(changed_clusters)}]: "
+                    f"Summarizing {platform} feed [{idx}/{len(changed_clusters)}]: "
                     f"{cluster.canonical_title[:45]}..."
                 )
                 job.append_log(
@@ -457,7 +449,7 @@ class JobService:
                     "INFO"
                 )
                 db.commit()
-                await cls._emit_progress(job, f"Summarizing {platform} topic {idx}")
+                await cls._emit_progress(job, f"Summarizing feed {feed_index} topic {idx}")
 
                 try:
                     try:
@@ -496,10 +488,7 @@ class JobService:
                     )
                     db.commit()
 
-            job.append_log(
-                f"Finished platform {platform} ({platform_index}/{len(platform_queues)}).",
-                "INFO"
-            )
+            job.append_log(f"Finished feed {source_name} ({feed_index}/{len(feed_configs)}).", "INFO")
 
         # 4. Compile Consolidated Daily Omnichannel Brief (DAILY_BRIEF.md)
         job.current_step = "Compiling Consolidated Daily Omnichannel Brief (DAILY_BRIEF.md)..."
