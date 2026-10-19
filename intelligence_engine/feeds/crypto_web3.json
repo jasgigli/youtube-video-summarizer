@@ -1,0 +1,20 @@
+[
+  {
+    "name": "CoinDesk",
+    "platform": "blog",
+    "category": "Crypto & Web3",
+    "type": "rss",
+    "url": "https://www.coindesk.com/arc/outboundfeeds/rss/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Cointelegraph",
+    "platform": "blog",
+    "category": "Crypto & Web3",
+    "type": "rss",
+    "url": "https://cointelegraph.com/rss",
+    "limit": 8,
+    "max_age_days": 30
+  }
+]

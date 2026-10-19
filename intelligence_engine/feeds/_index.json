@@ -1,0 +1,147 @@
+{
+  "total": 459,
+  "files": [
+    {
+      "file": "feeds/aggregators.json",
+      "count": 33,
+      "types": [
+        "rss"
+      ]
+    },
+    {
+      "file": "feeds/ai_labs.json",
+      "count": 26,
+      "types": [
+        "rss",
+        "web_page"
+      ]
+    },
+    {
+      "file": "feeds/big_tech_cloud.json",
+      "count": 18,
+      "types": [
+        "rss"
+      ]
+    },
+    {
+      "file": "feeds/crypto_web3.json",
+      "count": 2,
+      "types": [
+        "rss"
+      ]
+    },
+    {
+      "file": "feeds/cybersecurity.json",
+      "count": 12,
+      "types": [
+        "rss"
+      ]
+    },
+    {
+      "file": "feeds/deep_tech_science.json",
+      "count": 8,
+      "types": [
+        "rss"
+      ]
+    },
+    {
+      "file": "feeds/engineering_dev_blogs.json",
+      "count": 50,
+      "types": [
+        "rss"
+      ]
+    },
+    {
+      "file": "feeds/github.json",
+      "count": 24,
+      "types": [
+        "github_trending",
+        "rss"
+      ]
+    },
+    {
+      "file": "feeds/hackernews.json",
+      "count": 2,
+      "types": [
+        "hn_api"
+      ]
+    },
+    {
+      "file": "feeds/linkedin.json",
+      "count": 28,
+      "types": [
+        "linkedin_company"
+      ]
+    },
+    {
+      "file": "feeds/newsletters.json",
+      "count": 12,
+      "types": [
+        "rss"
+      ]
+    },
+    {
+      "file": "feeds/podcasts.json",
+      "count": 6,
+      "types": [
+        "rss"
+      ]
+    },
+    {
+      "file": "feeds/reddit.json",
+      "count": 35,
+      "types": [
+        "reddit_json"
+      ]
+    },
+    {
+      "file": "feeds/regional_news.json",
+      "count": 8,
+      "types": [
+        "rss"
+      ]
+    },
+    {
+      "file": "feeds/research_arxiv.json",
+      "count": 8,
+      "types": [
+        "rss"
+      ]
+    },
+    {
+      "file": "feeds/startups_vc.json",
+      "count": 7,
+      "types": [
+        "rss"
+      ]
+    },
+    {
+      "file": "feeds/status_pages.json",
+      "count": 4,
+      "types": [
+        "rss"
+      ]
+    },
+    {
+      "file": "feeds/tech_news.json",
+      "count": 33,
+      "types": [
+        "rss"
+      ]
+    },
+    {
+      "file": "feeds/twitter_x.json",
+      "count": 75,
+      "types": [
+        "x_account"
+      ]
+    },
+    {
+      "file": "feeds/youtube.json",
+      "count": 68,
+      "types": [
+        "rss"
+      ]
+    }
+  ]
+}

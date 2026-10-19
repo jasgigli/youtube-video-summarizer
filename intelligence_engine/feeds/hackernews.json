@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Hacker News Top Tech & AI",
+    "platform": "hackernews",
+    "category": "Engineering Discussions & Breakdowns",
+    "type": "hn_api",
+    "url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=15"
+  },
+  {
+    "name": "Hacker News — Show HN",
+    "platform": "hackernews",
+    "category": "Engineering Discussions & Breakdowns",
+    "type": "hn_api",
+    "url": "https://hn.algolia.com/api/v1/search?tags=show_hn&hitsPerPage=15"
+  }
+]

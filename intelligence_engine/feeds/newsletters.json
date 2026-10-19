@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Import AI",
+    "platform": "newsletter",
+    "category": "AI Newsletters & Research",
+    "type": "rss",
+    "url": "https://importai.substack.com/feed",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Ben's Bites",
+    "platform": "newsletter",
+    "category": "AI Newsletters & Research",
+    "type": "rss",
+    "url": "https://www.bensbites.com/feed",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Latent Space",
+    "platform": "newsletter",
+    "category": "AI Newsletters & Research",
+    "type": "rss",
+    "url": "https://www.latent.space/feed",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Interconnects",
+    "platform": "newsletter",
+    "category": "AI Newsletters & Research",
+    "type": "rss",
+    "url": "https://www.interconnects.ai/feed",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Last Week in AI",
+    "platform": "newsletter",
+    "category": "AI Newsletters & Research",
+    "type": "rss",
+    "url": "https://lastweekin.ai/feed",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Ahead of AI (Sebastian Raschka)",
+    "platform": "newsletter",
+    "category": "AI Newsletters & Research",
+    "type": "rss",
+    "url": "https://magazine.sebastianraschka.com/feed",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Simon Willison",
+    "platform": "newsletter",
+    "category": "AI Newsletters & Research",
+    "type": "rss",
+    "url": "https://simonwillison.net/atom/everything/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Lilian Weng",
+    "platform": "newsletter",
+    "category": "AI Newsletters & Research",
+    "type": "rss",
+    "url": "https://lilianweng.github.io/index.xml",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Towards Data Science",
+    "platform": "newsletter",
+    "category": "AI Newsletters & Research",
+    "type": "rss",
+    "url": "https://towardsdatascience.com/feed",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Medium — Artificial Intelligence",
+    "platform": "newsletter",
+    "category": "AI Newsletters & Research",
+    "type": "rss",
+    "url": "https://medium.com/feed/tag/artificial-intelligence",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Medium — Programming",
+    "platform": "newsletter",
+    "category": "AI Newsletters & Research",
+    "type": "rss",
+    "url": "https://medium.com/feed/tag/programming",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Medium — Software Engineering",
+    "platform": "newsletter",
+    "category": "AI Newsletters & Research",
+    "type": "rss",
+    "url": "https://medium.com/feed/tag/software-engineering",
+    "limit": 8,
+    "max_age_days": 30
+  }
+]

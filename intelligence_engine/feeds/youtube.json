@@ -1,0 +1,682 @@
+[
+  {
+    "name": "YouTube — OpenAI",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCXZCJLdBC09xxGZ6gcdrc6A",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A"
+  },
+  {
+    "name": "YouTube — Anthropic",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCrDwWp7EBBv4NwvScIpBDOA",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA"
+  },
+  {
+    "name": "YouTube — Google DeepMind",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCP7jMXSY2xbc3KCAE0MHQ-A",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A"
+  },
+  {
+    "name": "YouTube — Hugging Face",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCHlNU7kIZhRgSbhHvFoy72w",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w"
+  },
+  {
+    "name": "YouTube — NVIDIA",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCHuiy8bXnmK5nisYHUd1J5g",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCHuiy8bXnmK5nisYHUd1J5g"
+  },
+  {
+    "name": "YouTube — Google for Developers",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC_x5XG1OV2P6uZZ5FSM9Ttw",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UC_x5XG1OV2P6uZZ5FSM9Ttw"
+  },
+  {
+    "name": "YouTube — Android Developers",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCVHFbqXqoYvEWM1Ddxl0QDg",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCVHFbqXqoYvEWM1Ddxl0QDg"
+  },
+  {
+    "name": "YouTube — Microsoft Developer",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCsMica-v34Irf9KVTh6xx-g",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCsMica-v34Irf9KVTh6xx-g"
+  },
+  {
+    "name": "YouTube — Apple",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCE_M8A5yxnLfW0KghEeajjw",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCE_M8A5yxnLfW0KghEeajjw"
+  },
+  {
+    "name": "YouTube — AWS",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCd6MoB9NC6uYN2grvUNT-Zg",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCd6MoB9NC6uYN2grvUNT-Zg"
+  },
+  {
+    "name": "YouTube — Google Cloud Tech",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCJS9pqu9BzkAMNTmzNMNhvg",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCJS9pqu9BzkAMNTmzNMNhvg"
+  },
+  {
+    "name": "YouTube — GitHub",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC7c3Kb6jYCRj4JOHHZTxKsQ",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UC7c3Kb6jYCRj4JOHHZTxKsQ"
+  },
+  {
+    "name": "YouTube — Vercel",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCLq8gNoee7oXM7MvTdjyQvA",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCLq8gNoee7oXM7MvTdjyQvA"
+  },
+  {
+    "name": "YouTube — Y Combinator",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCcefcZRL2oaA_uBNeo5UOWg",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCcefcZRL2oaA_uBNeo5UOWg"
+  },
+  {
+    "name": "YouTube — Fireship",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCsBjURrPoezykLs9EqgamOA",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCsBjURrPoezykLs9EqgamOA"
+  },
+  {
+    "name": "YouTube — Two Minute Papers",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCbfYPyITQ-7l4upoX8nvctg"
+  },
+  {
+    "name": "YouTube — Andrej Karpathy",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCXUPKJO5MZQN11PqgIvyuvQ",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCXUPKJO5MZQN11PqgIvyuvQ"
+  },
+  {
+    "name": "YouTube — Yannic Kilcher",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCZHmQk67mSJgfCCTn7xBfew",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCZHmQk67mSJgfCCTn7xBfew"
+  },
+  {
+    "name": "YouTube — AI Explained",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCNJ1Ymd5yFuUPtn21xtRbbw",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw"
+  },
+  {
+    "name": "YouTube — Matt Wolfe",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UChpleBmo18P08aKCIgti38g",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UChpleBmo18P08aKCIgti38g"
+  },
+  {
+    "name": "YouTube — Sam Witteveen",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC55ODQSvARtgSyc8ThfiepQ",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UC55ODQSvARtgSyc8ThfiepQ"
+  },
+  {
+    "name": "YouTube — StatQuest",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCtYLUTtgS3k1Fg4y5tAhLbw",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCtYLUTtgS3k1Fg4y5tAhLbw"
+  },
+  {
+    "name": "YouTube — 3Blue1Brown",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCYO_jab_esuFRV4b17AJtAw",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCYO_jab_esuFRV4b17AJtAw"
+  },
+  {
+    "name": "YouTube — Lex Fridman",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCSHZKyawb77ixDdsGog4iWA",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCSHZKyawb77ixDdsGog4iWA"
+  },
+  {
+    "name": "YouTube — Dwarkesh Patel",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCXl4i9dYBrFOabk0xGmbkRA",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCXl4i9dYBrFOabk0xGmbkRA"
+  },
+  {
+    "name": "YouTube — Sentdex",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCfzlCWGWYyIQ0aLC5w48gBQ",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCfzlCWGWYyIQ0aLC5w48gBQ"
+  },
+  {
+    "name": "YouTube — ThePrimeagen",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC8ENHE5xdFSwx71u3fDH5Xw",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UC8ENHE5xdFSwx71u3fDH5Xw"
+  },
+  {
+    "name": "YouTube — Theo (t3.gg)",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCbRP3c757lWg9M-U7TyEkXA",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCbRP3c757lWg9M-U7TyEkXA"
+  },
+  {
+    "name": "YouTube — Traversy Media",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC29ju8bIPH5as8OGnQzwJyA",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UC29ju8bIPH5as8OGnQzwJyA"
+  },
+  {
+    "name": "YouTube — Web Dev Simplified",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCFbNIlppjAuEX4znoulh0Cw",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCFbNIlppjAuEX4znoulh0Cw"
+  },
+  {
+    "name": "YouTube — Kevin Powell",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCJZv4d5rbIKd4QHMPkcABCw",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCJZv4d5rbIKd4QHMPkcABCw"
+  },
+  {
+    "name": "YouTube — Programming with Mosh",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCWv7vMbMWH4-V0ZXdmDpPBA",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCWv7vMbMWH4-V0ZXdmDpPBA"
+  },
+  {
+    "name": "YouTube — Tech With Tim",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC4JX40jDee_tINbkjycV4Sg",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UC4JX40jDee_tINbkjycV4Sg"
+  },
+  {
+    "name": "YouTube — freeCodeCamp",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC8butISFwT-Wl7EV0hUK0BQ",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UC8butISFwT-Wl7EV0hUK0BQ"
+  },
+  {
+    "name": "YouTube — CS50",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCcabW7890RKJzL968QWEykA",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCcabW7890RKJzL968QWEykA"
+  },
+  {
+    "name": "YouTube — Stanford Online",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBa5G_ESCn8Yd4vw5U-gIcg",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCBa5G_ESCn8Yd4vw5U-gIcg"
+  },
+  {
+    "name": "YouTube — The Coding Train",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCvjgXvBlbQiydffZU7m1_aw",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCvjgXvBlbQiydffZU7m1_aw"
+  },
+  {
+    "name": "YouTube — Nick Chapsas",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCrkPsvLGln62OMZRo6K-dng",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCrkPsvLGln62OMZRo6K-dng"
+  },
+  {
+    "name": "YouTube — NeetCode",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC_mYaQAE6-71rjSN6CeCA-g",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UC_mYaQAE6-71rjSN6CeCA-g"
+  },
+  {
+    "name": "YouTube — TechWorld with Nana",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCdngmbVKX1Tgre699-XLlUA",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCdngmbVKX1Tgre699-XLlUA"
+  },
+  {
+    "name": "YouTube — ByteByteGo",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCZgt6AzoyjslHTC9dz0UoTw",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCZgt6AzoyjslHTC9dz0UoTw"
+  },
+  {
+    "name": "YouTube — Gaurav Sen",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCRPMAqdtSgd0Ipeef7iFsKw",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCRPMAqdtSgd0Ipeef7iFsKw"
+  },
+  {
+    "name": "YouTube — Hussein Nasser",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC_ML5xP23TOWKUcc-oAE_Eg",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UC_ML5xP23TOWKUcc-oAE_Eg"
+  },
+  {
+    "name": "YouTube — Computerphile",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC9-y-6csu5WGm29I7JiwpnA",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UC9-y-6csu5WGm29I7JiwpnA"
+  },
+  {
+    "name": "YouTube — Low Level Learning",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC6biysICWOJ-C3P4Tyeggzg",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UC6biysICWOJ-C3P4Tyeggzg"
+  },
+  {
+    "name": "YouTube — Ben Eater",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCS0N5baNlQWJCUrhCEo8WlA",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCS0N5baNlQWJCUrhCEo8WlA"
+  },
+  {
+    "name": "YouTube — Jeff Geerling",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCR-DXc1voovS8nhAvccRZhg",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCR-DXc1voovS8nhAvccRZhg"
+  },
+  {
+    "name": "YouTube — TechLead",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC4xKdmAXFh4ACyhpiQ_3qBw",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UC4xKdmAXFh4ACyhpiQ_3qBw"
+  },
+  {
+    "name": "YouTube — Joma Tech",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCV0qA-eDDICsRR9rPcnG7tw",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCV0qA-eDDICsRR9rPcnG7tw"
+  },
+  {
+    "name": "YouTube — NetworkChuck",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC9x0AN7BWHpCDHSm9NiJFJQ",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UC9x0AN7BWHpCDHSm9NiJFJQ"
+  },
+  {
+    "name": "YouTube — LiveOverflow",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UClcE-kVhqyiHCcjYwcpfj9w",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UClcE-kVhqyiHCcjYwcpfj9w"
+  },
+  {
+    "name": "YouTube — John Hammond",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCVeW9qkBjo3zosnqUbG7CFw",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCVeW9qkBjo3zosnqUbG7CFw"
+  },
+  {
+    "name": "YouTube — MKBHD",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBJycsmduvYEL83R_U4JriQ",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCBJycsmduvYEL83R_U4JriQ"
+  },
+  {
+    "name": "YouTube — Linus Tech Tips",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCXuqSBlHAE6Xw-yeJA0Tunw",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCXuqSBlHAE6Xw-yeJA0Tunw"
+  },
+  {
+    "name": "YouTube — The Verge",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCddiUEpeqJcYeBxX1IVBKvQ",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCddiUEpeqJcYeBxX1IVBKvQ"
+  },
+  {
+    "name": "YouTube — WIRED",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCftwRNsjfRo08xYE31tkiyw",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCftwRNsjfRo08xYE31tkiyw"
+  },
+  {
+    "name": "YouTube — CNET",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCOmcA3f_RrH6b9NmcNa4tdg",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCOmcA3f_RrH6b9NmcNa4tdg"
+  },
+  {
+    "name": "YouTube — Engadget",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-6OW5aJYBFM33zXQlBKPNA",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UC-6OW5aJYBFM33zXQlBKPNA"
+  },
+  {
+    "name": "YouTube — Bloomberg Technology",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCrM7B7SL_g1edFOnmj-SDKg",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCrM7B7SL_g1edFOnmj-SDKg"
+  },
+  {
+    "name": "YouTube — ColdFusion",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC4QZ_LsYcvcq7qOsOhpI3pQ",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UC4QZ_LsYcvcq7qOsOhpI3pQ"
+  },
+  {
+    "name": "YouTube — Mrwhosetheboss",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCMiJRAwDNSNzuYeN2uWa0pA",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCMiJRAwDNSNzuYeN2uWa0pA"
+  },
+  {
+    "name": "YouTube — Dave2D",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCVYamHliCI9rw1tHR1xbkfw",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCVYamHliCI9rw1tHR1xbkfw"
+  },
+  {
+    "name": "YouTube — Unbox Therapy",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCsTcErHg8oDvUnTzoqsYeNw",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCsTcErHg8oDvUnTzoqsYeNw"
+  },
+  {
+    "name": "YouTube — TechLinked",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCeeFfhMcJa1kjtfZAGskOCA",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCeeFfhMcJa1kjtfZAGskOCA"
+  },
+  {
+    "name": "YouTube — Level1Techs",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC4w1YQAJMWOz4qtxinq55LQ",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UC4w1YQAJMWOz4qtxinq55LQ"
+  },
+  {
+    "name": "YouTube — Gamers Nexus",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UChIs72whgZI9w6d6FhwGGHA",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UChIs72whgZI9w6d6FhwGGHA"
+  },
+  {
+    "name": "YouTube — Hardware Unboxed",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCI8iQa1hv7oV_Z8D35vVuSg",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCI8iQa1hv7oV_Z8D35vVuSg"
+  },
+  {
+    "name": "YouTube — JayzTwoCents",
+    "platform": "youtube",
+    "category": "YouTube Tech Channels",
+    "type": "rss",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCkWQ0gDrqOCarmUKmppD7GQ",
+    "limit": 5,
+    "max_age_days": 14,
+    "channel_id": "UCkWQ0gDrqOCarmUKmppD7GQ"
+  }
+]

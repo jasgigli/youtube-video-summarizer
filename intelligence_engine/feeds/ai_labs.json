@@ -1,0 +1,236 @@
+[
+  {
+    "name": "OpenAI Research & News",
+    "platform": "frontier_ai",
+    "category": "Frontier AI Releases",
+    "type": "rss",
+    "url": "https://openai.com/news/rss.xml",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Google DeepMind Blog",
+    "platform": "frontier_ai",
+    "category": "Frontier AI Releases",
+    "type": "rss",
+    "url": "https://deepmind.google/blog/rss.xml",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Anthropic News & Announcements",
+    "platform": "frontier_ai",
+    "category": "Frontier AI Releases",
+    "type": "rss",
+    "url": "https://www.anthropic.com/news/rss.xml",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Meta AI Research",
+    "platform": "frontier_ai",
+    "category": "Frontier AI Releases",
+    "type": "rss",
+    "url": "https://ai.meta.com/blog/rss/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Google AI & Technology News",
+    "platform": "frontier_ai",
+    "category": "Frontier AI Releases",
+    "type": "rss",
+    "url": "https://blog.google/technology/ai/rss/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Microsoft Research",
+    "platform": "frontier_ai",
+    "category": "Frontier AI Releases",
+    "type": "rss",
+    "url": "https://www.microsoft.com/en-us/research/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Apple Machine Learning Research",
+    "platform": "frontier_ai",
+    "category": "Frontier AI Releases",
+    "type": "rss",
+    "url": "https://machinelearning.apple.com/rss.xml",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Qwen (Alibaba) Blog",
+    "platform": "frontier_ai",
+    "category": "Frontier AI Releases",
+    "type": "rss",
+    "url": "https://qwenlm.github.io/blog/index.xml",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "AWS Machine Learning Blog",
+    "platform": "frontier_ai",
+    "category": "Frontier AI Releases",
+    "type": "rss",
+    "url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Berkeley AI Research (BAIR)",
+    "platform": "frontier_ai",
+    "category": "Frontier AI Releases",
+    "type": "rss",
+    "url": "https://bair.berkeley.edu/blog/feed.xml",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Hugging Face Blog",
+    "platform": "frontier_ai",
+    "category": "Open Source AI & Models",
+    "type": "rss",
+    "url": "https://huggingface.co/blog/feed.xml",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Replicate Blog",
+    "platform": "frontier_ai",
+    "category": "Open Source AI & Models",
+    "type": "rss",
+    "url": "https://replicate.com/blog/rss",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Weights & Biases Fully Connected",
+    "platform": "frontier_ai",
+    "category": "Open Source AI & Models",
+    "type": "rss",
+    "url": "https://wandb.ai/fully-connected/rss.xml",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "LangChain Blog",
+    "platform": "frontier_ai",
+    "category": "Open Source AI & Models",
+    "type": "rss",
+    "url": "https://blog.langchain.dev/rss/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Databricks Blog",
+    "platform": "frontier_ai",
+    "category": "Open Source AI & Models",
+    "type": "rss",
+    "url": "https://www.databricks.com/feed",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Mistral AI News",
+    "platform": "frontier_ai",
+    "category": "Frontier AI Releases",
+    "type": "web_page",
+    "url": "https://mistral.ai/news",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "xAI News",
+    "platform": "frontier_ai",
+    "category": "Frontier AI Releases",
+    "type": "web_page",
+    "url": "https://x.ai/news",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Cohere Blog",
+    "platform": "frontier_ai",
+    "category": "Frontier AI Releases",
+    "type": "web_page",
+    "url": "https://cohere.com/blog",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Stability AI News",
+    "platform": "frontier_ai",
+    "category": "Frontier AI Releases",
+    "type": "web_page",
+    "url": "https://stability.ai/news",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Perplexity Hub",
+    "platform": "frontier_ai",
+    "category": "Frontier AI Releases",
+    "type": "web_page",
+    "url": "https://www.perplexity.ai/hub",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "DeepSeek News",
+    "platform": "frontier_ai",
+    "category": "Frontier AI Releases",
+    "type": "web_page",
+    "url": "https://api-docs.deepseek.com/news/news250120",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Ollama Blog",
+    "platform": "frontier_ai",
+    "category": "Frontier AI Releases",
+    "type": "web_page",
+    "url": "https://ollama.com/blog",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Stanford HAI News",
+    "platform": "frontier_ai",
+    "category": "Frontier AI Releases",
+    "type": "web_page",
+    "url": "https://hai.stanford.edu/news",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Hugging Face Daily Papers",
+    "platform": "frontier_ai",
+    "category": "Frontier AI Releases",
+    "type": "web_page",
+    "url": "https://huggingface.co/papers",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Allen Institute for AI Blog",
+    "platform": "frontier_ai",
+    "category": "Frontier AI Releases",
+    "type": "web_page",
+    "url": "https://allenai.org/blog",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "NVIDIA Developer & Research News",
+    "platform": "frontier_ai",
+    "category": "AI Hardware & Research",
+    "type": "rss",
+    "url": "https://blogs.nvidia.com/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  }
+]

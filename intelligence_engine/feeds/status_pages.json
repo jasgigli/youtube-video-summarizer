@@ -1,0 +1,38 @@
+[
+  {
+    "name": "OpenAI Status",
+    "platform": "status",
+    "category": "Service Status",
+    "type": "rss",
+    "url": "https://status.openai.com/history.rss",
+    "limit": 5,
+    "max_age_days": 7
+  },
+  {
+    "name": "Claude Status",
+    "platform": "status",
+    "category": "Service Status",
+    "type": "rss",
+    "url": "https://status.claude.com/history.rss",
+    "limit": 5,
+    "max_age_days": 7
+  },
+  {
+    "name": "GitHub Status",
+    "platform": "status",
+    "category": "Service Status",
+    "type": "rss",
+    "url": "https://www.githubstatus.com/history.rss",
+    "limit": 5,
+    "max_age_days": 7
+  },
+  {
+    "name": "Cloudflare Status",
+    "platform": "status",
+    "category": "Service Status",
+    "type": "rss",
+    "url": "https://www.cloudflarestatus.com/history.rss",
+    "limit": 5,
+    "max_age_days": 7
+  }
+]

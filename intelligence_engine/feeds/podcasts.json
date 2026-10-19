@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Lex Fridman Podcast",
+    "platform": "podcast",
+    "category": "Tech Podcasts",
+    "type": "rss",
+    "url": "https://lexfridman.com/feed/podcast/",
+    "limit": 5,
+    "max_age_days": 30
+  },
+  {
+    "name": "Acquired",
+    "platform": "podcast",
+    "category": "Tech Podcasts",
+    "type": "rss",
+    "url": "https://feeds.transistor.fm/acquired",
+    "limit": 5,
+    "max_age_days": 30
+  },
+  {
+    "name": "Hard Fork (NYT)",
+    "platform": "podcast",
+    "category": "Tech Podcasts",
+    "type": "rss",
+    "url": "https://feeds.simplecast.com/l2i9YnTd",
+    "limit": 5,
+    "max_age_days": 30
+  },
+  {
+    "name": "Practical AI",
+    "platform": "podcast",
+    "category": "Tech Podcasts",
+    "type": "rss",
+    "url": "https://changelog.com/practicalai/feed",
+    "limit": 5,
+    "max_age_days": 30
+  },
+  {
+    "name": "Software Engineering Daily",
+    "platform": "podcast",
+    "category": "Tech Podcasts",
+    "type": "rss",
+    "url": "https://softwareengineeringdaily.com/feed/podcast/",
+    "limit": 5,
+    "max_age_days": 30
+  },
+  {
+    "name": "Darknet Diaries",
+    "platform": "podcast",
+    "category": "Tech Podcasts",
+    "type": "rss",
+    "url": "https://feeds.megaphone.fm/darknetdiaries",
+    "limit": 5,
+    "max_age_days": 30
+  }
+]

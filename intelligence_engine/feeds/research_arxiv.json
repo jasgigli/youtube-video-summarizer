@@ -1,0 +1,74 @@
+[
+  {
+    "name": "arXiv cs.AI — Artificial Intelligence",
+    "platform": "research",
+    "category": "AI Newsletters & Research",
+    "type": "rss",
+    "url": "https://rss.arxiv.org/rss/cs.AI",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "arXiv cs.LG — Machine Learning",
+    "platform": "research",
+    "category": "AI Newsletters & Research",
+    "type": "rss",
+    "url": "https://rss.arxiv.org/rss/cs.LG",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "arXiv cs.CL — Computation & Language",
+    "platform": "research",
+    "category": "AI Newsletters & Research",
+    "type": "rss",
+    "url": "https://rss.arxiv.org/rss/cs.CL",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "arXiv cs.CV — Computer Vision",
+    "platform": "research",
+    "category": "AI Newsletters & Research",
+    "type": "rss",
+    "url": "https://rss.arxiv.org/rss/cs.CV",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "arXiv cs.CR — Cryptography & Security",
+    "platform": "research",
+    "category": "AI Newsletters & Research",
+    "type": "rss",
+    "url": "https://rss.arxiv.org/rss/cs.CR",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "arXiv cs.SE — Software Engineering",
+    "platform": "research",
+    "category": "AI Newsletters & Research",
+    "type": "rss",
+    "url": "https://rss.arxiv.org/rss/cs.SE",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "arXiv cs.DC — Distributed Computing",
+    "platform": "research",
+    "category": "AI Newsletters & Research",
+    "type": "rss",
+    "url": "https://rss.arxiv.org/rss/cs.DC",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "arXiv cs.RO — Robotics",
+    "platform": "research",
+    "category": "AI Newsletters & Research",
+    "type": "rss",
+    "url": "https://rss.arxiv.org/rss/cs.RO",
+    "limit": 10,
+    "max_age_days": 3
+  }
+]

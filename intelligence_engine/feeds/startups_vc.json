@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Crunchbase News",
+    "platform": "blog",
+    "category": "Startups & Venture Capital",
+    "type": "rss",
+    "url": "https://news.crunchbase.com/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "a16z",
+    "platform": "blog",
+    "category": "Startups & Venture Capital",
+    "type": "rss",
+    "url": "https://a16z.com/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Stratechery",
+    "platform": "blog",
+    "category": "Startups & Venture Capital",
+    "type": "rss",
+    "url": "https://stratechery.com/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Benedict Evans",
+    "platform": "blog",
+    "category": "Startups & Venture Capital",
+    "type": "rss",
+    "url": "https://www.ben-evans.com/benedictevans?format=rss",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Platformer",
+    "platform": "blog",
+    "category": "Startups & Venture Capital",
+    "type": "rss",
+    "url": "https://www.platformer.news/rss/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Sifted (Europe)",
+    "platform": "blog",
+    "category": "Startups & Venture Capital",
+    "type": "rss",
+    "url": "https://sifted.eu/feed",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "EU-Startups",
+    "platform": "blog",
+    "category": "Startups & Venture Capital",
+    "type": "rss",
+    "url": "https://www.eu-startups.com/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  }
+]

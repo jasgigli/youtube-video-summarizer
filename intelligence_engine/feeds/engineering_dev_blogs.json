@@ -1,0 +1,452 @@
+[
+  {
+    "name": "Cloudflare Engineering & Architecture",
+    "platform": "blog",
+    "category": "Software & System Architecture",
+    "type": "rss",
+    "url": "https://blog.cloudflare.com/rss/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Ars Technica",
+    "platform": "blog",
+    "category": "Software & System Architecture",
+    "type": "rss",
+    "url": "https://feeds.arstechnica.com/arstechnica/index",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Netflix Tech Blog",
+    "platform": "blog",
+    "category": "Software & System Architecture",
+    "type": "rss",
+    "url": "https://netflixtechblog.com/feed",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Uber Engineering",
+    "platform": "blog",
+    "category": "Software & System Architecture",
+    "type": "rss",
+    "url": "https://www.uber.com/blog/engineering/rss/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Airbnb Engineering",
+    "platform": "blog",
+    "category": "Software & System Architecture",
+    "type": "rss",
+    "url": "https://medium.com/feed/airbnb-engineering",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Pinterest Engineering",
+    "platform": "blog",
+    "category": "Software & System Architecture",
+    "type": "rss",
+    "url": "https://medium.com/feed/pinterest-engineering",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Stripe Blog",
+    "platform": "blog",
+    "category": "Software & System Architecture",
+    "type": "rss",
+    "url": "https://stripe.com/blog/feed.rss",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Spotify Engineering",
+    "platform": "blog",
+    "category": "Software & System Architecture",
+    "type": "rss",
+    "url": "https://engineering.atspotify.com/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Dropbox Tech",
+    "platform": "blog",
+    "category": "Software & System Architecture",
+    "type": "rss",
+    "url": "https://dropbox.tech/feed",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Slack Engineering",
+    "platform": "blog",
+    "category": "Software & System Architecture",
+    "type": "rss",
+    "url": "https://slack.engineering/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Discord Blog",
+    "platform": "blog",
+    "category": "Software & System Architecture",
+    "type": "rss",
+    "url": "https://discord.com/blog/rss.xml",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Fly.io Blog",
+    "platform": "blog",
+    "category": "Software & System Architecture",
+    "type": "rss",
+    "url": "https://fly.io/blog/feed.xml",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Martin Fowler",
+    "platform": "blog",
+    "category": "Software & System Architecture",
+    "type": "rss",
+    "url": "https://martinfowler.com/feed.atom",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "High Scalability",
+    "platform": "blog",
+    "category": "Software & System Architecture",
+    "type": "rss",
+    "url": "http://feeds.feedburner.com/HighScalability",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "InfoQ",
+    "platform": "blog",
+    "category": "Software & System Architecture",
+    "type": "rss",
+    "url": "https://feed.infoq.com/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "The Pragmatic Engineer",
+    "platform": "blog",
+    "category": "Software & System Architecture",
+    "type": "rss",
+    "url": "https://newsletter.pragmaticengineer.com/feed",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "ByteByteGo Newsletter",
+    "platform": "blog",
+    "category": "Software & System Architecture",
+    "type": "rss",
+    "url": "https://blog.bytebytego.com/feed",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Smashing Magazine",
+    "platform": "blog",
+    "category": "Software & System Architecture",
+    "type": "rss",
+    "url": "https://www.smashingmagazine.com/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "CSS-Tricks",
+    "platform": "blog",
+    "category": "Software & System Architecture",
+    "type": "rss",
+    "url": "https://css-tricks.com/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "GitHub Engineering Blog",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://github.blog/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Dev.to Top AI",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://dev.to/feed/tag/ai",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Dev.to Top Programming",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://dev.to/feed/tag/programming",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Dev.to Web Development",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://dev.to/feed/tag/webdev",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Docker Blog",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://www.docker.com/blog/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Kubernetes Blog",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://kubernetes.io/feed.xml",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "CNCF Blog",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://www.cncf.io/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Red Hat Blog",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://www.redhat.com/en/rss/blog",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Mozilla Blog",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://blog.mozilla.org/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Rust Blog",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://blog.rust-lang.org/feed.xml",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Go Blog",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://go.dev/blog/feed.atom",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Python Insider",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://pythoninsider.blogspot.com/feeds/posts/default",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Node.js Blog",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://nodejs.org/en/feed/blog.xml",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "TypeScript Blog",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://devblogs.microsoft.com/typescript/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "React Blog",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://react.dev/rss.xml",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Next.js Blog",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://nextjs.org/feed.xml",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Vercel Blog",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://vercel.com/atom",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Deno Blog",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://deno.com/feed",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Bun Blog",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://bun.sh/rss.xml",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "VS Code Updates",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://code.visualstudio.com/feed.xml",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "JetBrains Blog",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://blog.jetbrains.com/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Supabase Blog",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://supabase.com/rss.xml",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Redis Blog",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://redis.io/blog/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "PostgreSQL News",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://www.postgresql.org/news.rss",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Ubuntu Blog",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://ubuntu.com/blog/feed",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Linux Kernel Releases",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://www.kernel.org/feeds/kdist.xml",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "The Changelog",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://changelog.com/feed",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Hacker Noon",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://hackernoon.com/feed",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "JavaScript Weekly",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://javascriptweekly.com/rss",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Hackaday",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://hackaday.com/blog/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Product Hunt",
+    "platform": "blog",
+    "category": "Developer Tools & Open Source",
+    "type": "rss",
+    "url": "https://www.producthunt.com/feed",
+    "limit": 8,
+    "max_age_days": 30
+  }
+]

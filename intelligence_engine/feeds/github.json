@@ -1,0 +1,208 @@
+[
+  {
+    "name": "GitHub Trending Repositories",
+    "platform": "github",
+    "category": "Developer Tools & Open Source",
+    "type": "github_trending",
+    "url": "https://github.com/trending?since=daily"
+  },
+  {
+    "name": "GitHub Trending — Python",
+    "platform": "github",
+    "category": "Developer Tools & Open Source",
+    "type": "github_trending",
+    "url": "https://github.com/trending/python?since=daily"
+  },
+  {
+    "name": "GitHub Trending — Typescript",
+    "platform": "github",
+    "category": "Developer Tools & Open Source",
+    "type": "github_trending",
+    "url": "https://github.com/trending/typescript?since=daily"
+  },
+  {
+    "name": "GitHub Trending — Rust",
+    "platform": "github",
+    "category": "Developer Tools & Open Source",
+    "type": "github_trending",
+    "url": "https://github.com/trending/rust?since=daily"
+  },
+  {
+    "name": "GitHub Trending — Go",
+    "platform": "github",
+    "category": "Developer Tools & Open Source",
+    "type": "github_trending",
+    "url": "https://github.com/trending/go?since=daily"
+  },
+  {
+    "name": "GitHub Releases — pytorch/pytorch",
+    "platform": "github",
+    "category": "Software Releases",
+    "type": "rss",
+    "url": "https://github.com/pytorch/pytorch/releases.atom",
+    "limit": 5,
+    "max_age_days": 30
+  },
+  {
+    "name": "GitHub Releases — tensorflow/tensorflow",
+    "platform": "github",
+    "category": "Software Releases",
+    "type": "rss",
+    "url": "https://github.com/tensorflow/tensorflow/releases.atom",
+    "limit": 5,
+    "max_age_days": 30
+  },
+  {
+    "name": "GitHub Releases — huggingface/transformers",
+    "platform": "github",
+    "category": "Software Releases",
+    "type": "rss",
+    "url": "https://github.com/huggingface/transformers/releases.atom",
+    "limit": 5,
+    "max_age_days": 30
+  },
+  {
+    "name": "GitHub Releases — ollama/ollama",
+    "platform": "github",
+    "category": "Software Releases",
+    "type": "rss",
+    "url": "https://github.com/ollama/ollama/releases.atom",
+    "limit": 5,
+    "max_age_days": 30
+  },
+  {
+    "name": "GitHub Releases — ggml-org/llama.cpp",
+    "platform": "github",
+    "category": "Software Releases",
+    "type": "rss",
+    "url": "https://github.com/ggml-org/llama.cpp/releases.atom",
+    "limit": 5,
+    "max_age_days": 30
+  },
+  {
+    "name": "GitHub Releases — vllm-project/vllm",
+    "platform": "github",
+    "category": "Software Releases",
+    "type": "rss",
+    "url": "https://github.com/vllm-project/vllm/releases.atom",
+    "limit": 5,
+    "max_age_days": 30
+  },
+  {
+    "name": "GitHub Releases — langchain-ai/langchain",
+    "platform": "github",
+    "category": "Software Releases",
+    "type": "rss",
+    "url": "https://github.com/langchain-ai/langchain/releases.atom",
+    "limit": 5,
+    "max_age_days": 30
+  },
+  {
+    "name": "GitHub Releases — microsoft/vscode",
+    "platform": "github",
+    "category": "Software Releases",
+    "type": "rss",
+    "url": "https://github.com/microsoft/vscode/releases.atom",
+    "limit": 5,
+    "max_age_days": 30
+  },
+  {
+    "name": "GitHub Releases — facebook/react",
+    "platform": "github",
+    "category": "Software Releases",
+    "type": "rss",
+    "url": "https://github.com/facebook/react/releases.atom",
+    "limit": 5,
+    "max_age_days": 30
+  },
+  {
+    "name": "GitHub Releases — vercel/next.js",
+    "platform": "github",
+    "category": "Software Releases",
+    "type": "rss",
+    "url": "https://github.com/vercel/next.js/releases.atom",
+    "limit": 5,
+    "max_age_days": 30
+  },
+  {
+    "name": "GitHub Releases — nodejs/node",
+    "platform": "github",
+    "category": "Software Releases",
+    "type": "rss",
+    "url": "https://github.com/nodejs/node/releases.atom",
+    "limit": 5,
+    "max_age_days": 30
+  },
+  {
+    "name": "GitHub Releases — rust-lang/rust",
+    "platform": "github",
+    "category": "Software Releases",
+    "type": "rss",
+    "url": "https://github.com/rust-lang/rust/releases.atom",
+    "limit": 5,
+    "max_age_days": 30
+  },
+  {
+    "name": "GitHub Releases — golang/go",
+    "platform": "github",
+    "category": "Software Releases",
+    "type": "rss",
+    "url": "https://github.com/golang/go/releases.atom",
+    "limit": 5,
+    "max_age_days": 30
+  },
+  {
+    "name": "GitHub Releases — python/cpython",
+    "platform": "github",
+    "category": "Software Releases",
+    "type": "rss",
+    "url": "https://github.com/python/cpython/releases.atom",
+    "limit": 5,
+    "max_age_days": 30
+  },
+  {
+    "name": "GitHub Releases — kubernetes/kubernetes",
+    "platform": "github",
+    "category": "Software Releases",
+    "type": "rss",
+    "url": "https://github.com/kubernetes/kubernetes/releases.atom",
+    "limit": 5,
+    "max_age_days": 30
+  },
+  {
+    "name": "GitHub Releases — openai/openai-python",
+    "platform": "github",
+    "category": "Software Releases",
+    "type": "rss",
+    "url": "https://github.com/openai/openai-python/releases.atom",
+    "limit": 5,
+    "max_age_days": 30
+  },
+  {
+    "name": "GitHub Releases — anthropics/anthropic-sdk-python",
+    "platform": "github",
+    "category": "Software Releases",
+    "type": "rss",
+    "url": "https://github.com/anthropics/anthropic-sdk-python/releases.atom",
+    "limit": 5,
+    "max_age_days": 30
+  },
+  {
+    "name": "GitHub Releases — anthropics/claude-code",
+    "platform": "github",
+    "category": "Software Releases",
+    "type": "rss",
+    "url": "https://github.com/anthropics/claude-code/releases.atom",
+    "limit": 5,
+    "max_age_days": 30
+  },
+  {
+    "name": "GitHub Releases — openai/codex",
+    "platform": "github",
+    "category": "Software Releases",
+    "type": "rss",
+    "url": "https://github.com/openai/codex/releases.atom",
+    "limit": 5,
+    "max_age_days": 30
+  }
+]

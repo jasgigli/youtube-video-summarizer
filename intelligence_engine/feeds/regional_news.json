@@ -1,0 +1,74 @@
+[
+  {
+    "name": "ProPakistani",
+    "platform": "blog",
+    "category": "Regional Tech News",
+    "type": "rss",
+    "url": "https://propakistani.pk/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "TechJuice (Pakistan)",
+    "platform": "blog",
+    "category": "Regional Tech News",
+    "type": "rss",
+    "url": "https://www.techjuice.pk/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Inc42 (India)",
+    "platform": "blog",
+    "category": "Regional Tech News",
+    "type": "rss",
+    "url": "https://inc42.com/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "YourStory (India)",
+    "platform": "blog",
+    "category": "Regional Tech News",
+    "type": "rss",
+    "url": "https://yourstory.com/feed",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Analytics India Magazine",
+    "platform": "blog",
+    "category": "Regional Tech News",
+    "type": "rss",
+    "url": "https://analyticsindiamag.com/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "TechCabal (Africa)",
+    "platform": "blog",
+    "category": "Regional Tech News",
+    "type": "rss",
+    "url": "https://techcabal.com/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Tech in Asia",
+    "platform": "blog",
+    "category": "Regional Tech News",
+    "type": "rss",
+    "url": "https://www.techinasia.com/feed",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "e27 (SE Asia)",
+    "platform": "blog",
+    "category": "Regional Tech News",
+    "type": "rss",
+    "url": "https://e27.co/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  }
+]

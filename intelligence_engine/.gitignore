@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Environment credentials
+.env
+.env.local
+
+# SQLite Database
+data/*.db
+data/*.db-shm
+data/*.db-wal
+*.db
+
+# Logs & temp
+*.log
+PyWhatKit_DB.txt

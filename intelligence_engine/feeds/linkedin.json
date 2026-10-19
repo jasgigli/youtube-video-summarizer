@@ -1,0 +1,282 @@
+[
+  {
+    "name": "LinkedIn — OpenAI",
+    "platform": "linkedin",
+    "category": "Social Media — LinkedIn",
+    "type": "linkedin_company",
+    "url": "https://www.linkedin.com/company/openai/posts/",
+    "slug": "openai",
+    "limit": 5,
+    "max_age_days": 14
+  },
+  {
+    "name": "LinkedIn — Anthropic",
+    "platform": "linkedin",
+    "category": "Social Media — LinkedIn",
+    "type": "linkedin_company",
+    "url": "https://www.linkedin.com/company/anthropicresearch/posts/",
+    "slug": "anthropicresearch",
+    "limit": 5,
+    "max_age_days": 14
+  },
+  {
+    "name": "LinkedIn — Google DeepMind",
+    "platform": "linkedin",
+    "category": "Social Media — LinkedIn",
+    "type": "linkedin_company",
+    "url": "https://www.linkedin.com/company/googledeepmind/posts/",
+    "slug": "googledeepmind",
+    "limit": 5,
+    "max_age_days": 14
+  },
+  {
+    "name": "LinkedIn — Google",
+    "platform": "linkedin",
+    "category": "Social Media — LinkedIn",
+    "type": "linkedin_company",
+    "url": "https://www.linkedin.com/company/google/posts/",
+    "slug": "google",
+    "limit": 5,
+    "max_age_days": 14
+  },
+  {
+    "name": "LinkedIn — Microsoft",
+    "platform": "linkedin",
+    "category": "Social Media — LinkedIn",
+    "type": "linkedin_company",
+    "url": "https://www.linkedin.com/company/microsoft/posts/",
+    "slug": "microsoft",
+    "limit": 5,
+    "max_age_days": 14
+  },
+  {
+    "name": "LinkedIn — NVIDIA",
+    "platform": "linkedin",
+    "category": "Social Media — LinkedIn",
+    "type": "linkedin_company",
+    "url": "https://www.linkedin.com/company/nvidia/posts/",
+    "slug": "nvidia",
+    "limit": 5,
+    "max_age_days": 14
+  },
+  {
+    "name": "LinkedIn — Meta",
+    "platform": "linkedin",
+    "category": "Social Media — LinkedIn",
+    "type": "linkedin_company",
+    "url": "https://www.linkedin.com/company/meta/posts/",
+    "slug": "meta",
+    "limit": 5,
+    "max_age_days": 14
+  },
+  {
+    "name": "LinkedIn — Amazon Web Services",
+    "platform": "linkedin",
+    "category": "Social Media — LinkedIn",
+    "type": "linkedin_company",
+    "url": "https://www.linkedin.com/company/amazon-web-services/posts/",
+    "slug": "amazon-web-services",
+    "limit": 5,
+    "max_age_days": 14
+  },
+  {
+    "name": "LinkedIn — Apple",
+    "platform": "linkedin",
+    "category": "Social Media — LinkedIn",
+    "type": "linkedin_company",
+    "url": "https://www.linkedin.com/company/apple/posts/",
+    "slug": "apple",
+    "limit": 5,
+    "max_age_days": 14
+  },
+  {
+    "name": "LinkedIn — IBM",
+    "platform": "linkedin",
+    "category": "Social Media — LinkedIn",
+    "type": "linkedin_company",
+    "url": "https://www.linkedin.com/company/ibm/posts/",
+    "slug": "ibm",
+    "limit": 5,
+    "max_age_days": 14
+  },
+  {
+    "name": "LinkedIn — Hugging Face",
+    "platform": "linkedin",
+    "category": "Social Media — LinkedIn",
+    "type": "linkedin_company",
+    "url": "https://www.linkedin.com/company/huggingface/posts/",
+    "slug": "huggingface",
+    "limit": 5,
+    "max_age_days": 14
+  },
+  {
+    "name": "LinkedIn — GitHub",
+    "platform": "linkedin",
+    "category": "Social Media — LinkedIn",
+    "type": "linkedin_company",
+    "url": "https://www.linkedin.com/company/github/posts/",
+    "slug": "github",
+    "limit": 5,
+    "max_age_days": 14
+  },
+  {
+    "name": "LinkedIn — Vercel",
+    "platform": "linkedin",
+    "category": "Social Media — LinkedIn",
+    "type": "linkedin_company",
+    "url": "https://www.linkedin.com/company/vercel/posts/",
+    "slug": "vercel",
+    "limit": 5,
+    "max_age_days": 14
+  },
+  {
+    "name": "LinkedIn — Cloudflare",
+    "platform": "linkedin",
+    "category": "Social Media — LinkedIn",
+    "type": "linkedin_company",
+    "url": "https://www.linkedin.com/company/cloudflare/posts/",
+    "slug": "cloudflare",
+    "limit": 5,
+    "max_age_days": 14
+  },
+  {
+    "name": "LinkedIn — Stripe",
+    "platform": "linkedin",
+    "category": "Social Media — LinkedIn",
+    "type": "linkedin_company",
+    "url": "https://www.linkedin.com/company/stripe/posts/",
+    "slug": "stripe",
+    "limit": 5,
+    "max_age_days": 14
+  },
+  {
+    "name": "LinkedIn — Y Combinator",
+    "platform": "linkedin",
+    "category": "Social Media — LinkedIn",
+    "type": "linkedin_company",
+    "url": "https://www.linkedin.com/company/y-combinator/posts/",
+    "slug": "y-combinator",
+    "limit": 5,
+    "max_age_days": 14
+  },
+  {
+    "name": "LinkedIn — Andreessen Horowitz",
+    "platform": "linkedin",
+    "category": "Social Media — LinkedIn",
+    "type": "linkedin_company",
+    "url": "https://www.linkedin.com/company/a16z/posts/",
+    "slug": "a16z",
+    "limit": 5,
+    "max_age_days": 14
+  },
+  {
+    "name": "LinkedIn — Intel",
+    "platform": "linkedin",
+    "category": "Social Media — LinkedIn",
+    "type": "linkedin_company",
+    "url": "https://www.linkedin.com/company/intel-corporation/posts/",
+    "slug": "intel-corporation",
+    "limit": 5,
+    "max_age_days": 14
+  },
+  {
+    "name": "LinkedIn — AMD",
+    "platform": "linkedin",
+    "category": "Social Media — LinkedIn",
+    "type": "linkedin_company",
+    "url": "https://www.linkedin.com/company/amd/posts/",
+    "slug": "amd",
+    "limit": 5,
+    "max_age_days": 14
+  },
+  {
+    "name": "LinkedIn — Oracle",
+    "platform": "linkedin",
+    "category": "Social Media — LinkedIn",
+    "type": "linkedin_company",
+    "url": "https://www.linkedin.com/company/oracle/posts/",
+    "slug": "oracle",
+    "limit": 5,
+    "max_age_days": 14
+  },
+  {
+    "name": "LinkedIn — Salesforce",
+    "platform": "linkedin",
+    "category": "Social Media — LinkedIn",
+    "type": "linkedin_company",
+    "url": "https://www.linkedin.com/company/salesforce/posts/",
+    "slug": "salesforce",
+    "limit": 5,
+    "max_age_days": 14
+  },
+  {
+    "name": "LinkedIn — Adobe",
+    "platform": "linkedin",
+    "category": "Social Media — LinkedIn",
+    "type": "linkedin_company",
+    "url": "https://www.linkedin.com/company/adobe/posts/",
+    "slug": "adobe",
+    "limit": 5,
+    "max_age_days": 14
+  },
+  {
+    "name": "LinkedIn — Databricks",
+    "platform": "linkedin",
+    "category": "Social Media — LinkedIn",
+    "type": "linkedin_company",
+    "url": "https://www.linkedin.com/company/databricks/posts/",
+    "slug": "databricks",
+    "limit": 5,
+    "max_age_days": 14
+  },
+  {
+    "name": "LinkedIn — Snowflake",
+    "platform": "linkedin",
+    "category": "Social Media — LinkedIn",
+    "type": "linkedin_company",
+    "url": "https://www.linkedin.com/company/snowflake-computing/posts/",
+    "slug": "snowflake-computing",
+    "limit": 5,
+    "max_age_days": 14
+  },
+  {
+    "name": "LinkedIn — Mistral AI",
+    "platform": "linkedin",
+    "category": "Social Media — LinkedIn",
+    "type": "linkedin_company",
+    "url": "https://www.linkedin.com/company/mistralai/posts/",
+    "slug": "mistralai",
+    "limit": 5,
+    "max_age_days": 14
+  },
+  {
+    "name": "LinkedIn — Cohere",
+    "platform": "linkedin",
+    "category": "Social Media — LinkedIn",
+    "type": "linkedin_company",
+    "url": "https://www.linkedin.com/company/cohere-ai/posts/",
+    "slug": "cohere-ai",
+    "limit": 5,
+    "max_age_days": 14
+  },
+  {
+    "name": "LinkedIn — Tesla",
+    "platform": "linkedin",
+    "category": "Social Media — LinkedIn",
+    "type": "linkedin_company",
+    "url": "https://www.linkedin.com/company/tesla-motors/posts/",
+    "slug": "tesla-motors",
+    "limit": 5,
+    "max_age_days": 14
+  },
+  {
+    "name": "LinkedIn — Samsung Electronics",
+    "platform": "linkedin",
+    "category": "Social Media — LinkedIn",
+    "type": "linkedin_company",
+    "url": "https://www.linkedin.com/company/samsungsemiconductor/posts/",
+    "slug": "samsungsemiconductor",
+    "limit": 5,
+    "max_age_days": 14
+  }
+]

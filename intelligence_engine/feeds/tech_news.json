@@ -1,0 +1,299 @@
+[
+  {
+    "name": "SemiAnalysis",
+    "platform": "blog",
+    "category": "AI Hardware & Research",
+    "type": "rss",
+    "url": "https://semianalysis.com/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Tom's Hardware",
+    "platform": "blog",
+    "category": "Big Tech & Hardware",
+    "type": "rss",
+    "url": "https://www.tomshardware.com/feeds/all",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Phoronix",
+    "platform": "blog",
+    "category": "Big Tech & Hardware",
+    "type": "rss",
+    "url": "https://www.phoronix.com/rss.php",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "TechCrunch AI",
+    "platform": "blog",
+    "category": "AI News & Startups",
+    "type": "rss",
+    "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "The Verge Tech & AI",
+    "platform": "blog",
+    "category": "Big Tech & Hardware",
+    "type": "rss",
+    "url": "https://theverge.com/rss/index.xml",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Engadget",
+    "platform": "blog",
+    "category": "Big Tech & Hardware",
+    "type": "rss",
+    "url": "https://www.engadget.com/rss.xml",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "CNET News",
+    "platform": "blog",
+    "category": "Big Tech & Hardware",
+    "type": "rss",
+    "url": "https://www.cnet.com/rss/news/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Gizmodo",
+    "platform": "blog",
+    "category": "Big Tech & Hardware",
+    "type": "rss",
+    "url": "https://gizmodo.com/rss",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Mashable Tech",
+    "platform": "blog",
+    "category": "Big Tech & Hardware",
+    "type": "rss",
+    "url": "https://mashable.com/feeds/rss/all",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "9to5Mac",
+    "platform": "blog",
+    "category": "Big Tech & Hardware",
+    "type": "rss",
+    "url": "https://9to5mac.com/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "9to5Google",
+    "platform": "blog",
+    "category": "Big Tech & Hardware",
+    "type": "rss",
+    "url": "https://9to5google.com/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "MacRumors",
+    "platform": "blog",
+    "category": "Big Tech & Hardware",
+    "type": "rss",
+    "url": "https://feeds.macrumors.com/MacRumors-All",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Android Authority",
+    "platform": "blog",
+    "category": "Big Tech & Hardware",
+    "type": "rss",
+    "url": "https://www.androidauthority.com/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Electrek",
+    "platform": "blog",
+    "category": "Big Tech & Hardware",
+    "type": "rss",
+    "url": "https://electrek.co/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "TechCrunch",
+    "platform": "blog",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://techcrunch.com/feed/",
+    "limit": 8,
+    "max_age_days": 7
+  },
+  {
+    "name": "Wired",
+    "platform": "blog",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://www.wired.com/feed/rss",
+    "limit": 8,
+    "max_age_days": 7
+  },
+  {
+    "name": "ZDNet",
+    "platform": "blog",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://www.zdnet.com/news/rss.xml",
+    "limit": 8,
+    "max_age_days": 7
+  },
+  {
+    "name": "VentureBeat",
+    "platform": "blog",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://venturebeat.com/feed/",
+    "limit": 8,
+    "max_age_days": 7
+  },
+  {
+    "name": "The Next Web",
+    "platform": "blog",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://thenextweb.com/feed",
+    "limit": 8,
+    "max_age_days": 7
+  },
+  {
+    "name": "The Register",
+    "platform": "blog",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://www.theregister.com/headlines.atom",
+    "limit": 8,
+    "max_age_days": 7
+  },
+  {
+    "name": "Slashdot",
+    "platform": "blog",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "http://rss.slashdot.org/Slashdot/slashdotMain",
+    "limit": 8,
+    "max_age_days": 7
+  },
+  {
+    "name": "Techmeme",
+    "platform": "blog",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://www.techmeme.com/feed.xml",
+    "limit": 8,
+    "max_age_days": 7
+  },
+  {
+    "name": "Hacker News Front Page",
+    "platform": "blog",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://hnrss.org/frontpage",
+    "limit": 8,
+    "max_age_days": 7
+  },
+  {
+    "name": "Hacker News Best",
+    "platform": "blog",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://hnrss.org/best",
+    "limit": 8,
+    "max_age_days": 7
+  },
+  {
+    "name": "Hacker News Show HN",
+    "platform": "blog",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://hnrss.org/show",
+    "limit": 8,
+    "max_age_days": 7
+  },
+  {
+    "name": "Lobsters",
+    "platform": "blog",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://lobste.rs/rss",
+    "limit": 8,
+    "max_age_days": 7
+  },
+  {
+    "name": "Bloomberg Technology",
+    "platform": "blog",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://feeds.bloomberg.com/technology/news.rss",
+    "limit": 8,
+    "max_age_days": 7
+  },
+  {
+    "name": "BBC Technology",
+    "platform": "blog",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "http://feeds.bbci.co.uk/news/technology/rss.xml",
+    "limit": 8,
+    "max_age_days": 7
+  },
+  {
+    "name": "The Guardian Technology",
+    "platform": "blog",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://www.theguardian.com/technology/rss",
+    "limit": 8,
+    "max_age_days": 7
+  },
+  {
+    "name": "NYT Technology",
+    "platform": "blog",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
+    "limit": 8,
+    "max_age_days": 7
+  },
+  {
+    "name": "CNBC Technology",
+    "platform": "blog",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://www.cnbc.com/id/19854910/device/rss/rss.html",
+    "limit": 8,
+    "max_age_days": 7
+  },
+  {
+    "name": "Rest of World",
+    "platform": "blog",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://restofworld.org/feed/latest",
+    "limit": 8,
+    "max_age_days": 7
+  },
+  {
+    "name": "TLDR Tech",
+    "platform": "blog",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://tldr.tech/api/rss/tech",
+    "limit": 8,
+    "max_age_days": 7
+  }
+]

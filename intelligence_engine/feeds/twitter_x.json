@@ -1,0 +1,752 @@
+[
+  {
+    "name": "X — OpenAI",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/OpenAI",
+    "handle": "OpenAI",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Anthropic",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/AnthropicAI",
+    "handle": "AnthropicAI",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Google DeepMind",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/GoogleDeepMind",
+    "handle": "GoogleDeepMind",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Google AI",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/GoogleAI",
+    "handle": "GoogleAI",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Google",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/Google",
+    "handle": "Google",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Microsoft",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/Microsoft",
+    "handle": "Microsoft",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Microsoft Research",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/MSFTResearch",
+    "handle": "MSFTResearch",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — NVIDIA",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/nvidia",
+    "handle": "nvidia",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Meta",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/Meta",
+    "handle": "Meta",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — AI at Meta",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/AIatMeta",
+    "handle": "AIatMeta",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Hugging Face",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/huggingface",
+    "handle": "huggingface",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Mistral AI",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/MistralAI",
+    "handle": "MistralAI",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — xAI",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/xai",
+    "handle": "xai",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Perplexity",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/perplexity_ai",
+    "handle": "perplexity_ai",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Cohere",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/cohere",
+    "handle": "cohere",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Stability AI",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/StabilityAI",
+    "handle": "StabilityAI",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — DeepSeek",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/deepseek_ai",
+    "handle": "deepseek_ai",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Qwen",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/Alibaba_Qwen",
+    "handle": "Alibaba_Qwen",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — GitHub",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/github",
+    "handle": "github",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Vercel",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/vercel",
+    "handle": "vercel",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Cloudflare",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/Cloudflare",
+    "handle": "Cloudflare",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — AWS",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/awscloud",
+    "handle": "awscloud",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Azure",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/Azure",
+    "handle": "Azure",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Google Cloud",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/googlecloud",
+    "handle": "googlecloud",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Apple",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/Apple",
+    "handle": "Apple",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — PyTorch",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/PyTorch",
+    "handle": "PyTorch",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — TensorFlow",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/TensorFlow",
+    "handle": "TensorFlow",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — LangChain",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/LangChainAI",
+    "handle": "LangChainAI",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Ollama",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/ollama",
+    "handle": "ollama",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Y Combinator",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/ycombinator",
+    "handle": "ycombinator",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — a16z",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/a16z",
+    "handle": "a16z",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Product Hunt",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/ProductHunt",
+    "handle": "ProductHunt",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Sam Altman",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/sama",
+    "handle": "sama",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Andrej Karpathy",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/karpathy",
+    "handle": "karpathy",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Yann LeCun",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/ylecun",
+    "handle": "ylecun",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Demis Hassabis",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/demishassabis",
+    "handle": "demishassabis",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Andrew Ng",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/AndrewYNg",
+    "handle": "AndrewYNg",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Jeff Dean",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/JeffDean",
+    "handle": "JeffDean",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Satya Nadella",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/satyanadella",
+    "handle": "satyanadella",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Sundar Pichai",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/sundarpichai",
+    "handle": "sundarpichai",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Greg Brockman",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/gdb",
+    "handle": "gdb",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — François Chollet",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/fchollet",
+    "handle": "fchollet",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Simon Willison",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/simonw",
+    "handle": "simonw",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — swyx",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/swyx",
+    "handle": "swyx",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Logan Kilpatrick",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/OfficialLoganK",
+    "handle": "OfficialLoganK",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Jim Fan",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/DrJimFan",
+    "handle": "DrJimFan",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Ethan Mollick",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/emollick",
+    "handle": "emollick",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Aravind Srinivas",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/AravSrinivas",
+    "handle": "AravSrinivas",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Guillermo Rauch",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/rauchg",
+    "handle": "rauchg",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Rowan Cheung",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/rowancheung",
+    "handle": "rowancheung",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — AK (HF Papers)",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/_akhaliq",
+    "handle": "_akhaliq",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Georgi Gerganov",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/ggerganov",
+    "handle": "ggerganov",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — ThePrimeagen",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/ThePrimeagen",
+    "handle": "ThePrimeagen",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Theo",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/theo",
+    "handle": "theo",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Paul Graham",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/paulg",
+    "handle": "paulg",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Pieter Levels",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/levelsio",
+    "handle": "levelsio",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Benedict Evans",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/benedictevans",
+    "handle": "benedictevans",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — TechCrunch",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/TechCrunch",
+    "handle": "TechCrunch",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — The Verge",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/verge",
+    "handle": "verge",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — WIRED",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/WIRED",
+    "handle": "WIRED",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Ars Technica",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/arstechnica",
+    "handle": "arstechnica",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Engadget",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/engadget",
+    "handle": "engadget",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — The Register",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/TheRegister",
+    "handle": "TheRegister",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Techmeme",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/Techmeme",
+    "handle": "Techmeme",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Hacker News",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/hackernews",
+    "handle": "hackernews",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — MKBHD",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/MKBHD",
+    "handle": "MKBHD",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Linus Tech Tips",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/LinusTech",
+    "handle": "LinusTech",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Brian Krebs",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/briankrebs",
+    "handle": "briankrebs",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — Troy Hunt",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/troyhunt",
+    "handle": "troyhunt",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — SwiftOnSecurity",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/SwiftOnSecurity",
+    "handle": "SwiftOnSecurity",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — The Hacker News",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/TheHackersNews",
+    "handle": "TheHackersNews",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — BleepingComputer",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/BleepinComputer",
+    "handle": "BleepinComputer",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — CISA Cyber",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/CISACyber",
+    "handle": "CISACyber",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — ProPakistani",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/ProPakistani",
+    "handle": "ProPakistani",
+    "limit": 10,
+    "max_age_days": 3
+  },
+  {
+    "name": "X — TechJuice",
+    "platform": "twitter_x",
+    "category": "Social Media — X (Twitter)",
+    "type": "x_account",
+    "url": "https://x.com/TechJuicePk",
+    "handle": "TechJuicePk",
+    "limit": 10,
+    "max_age_days": 3
+  }
+]

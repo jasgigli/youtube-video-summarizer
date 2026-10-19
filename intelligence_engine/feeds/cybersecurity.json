@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Krebs on Security",
+    "platform": "blog",
+    "category": "Cybersecurity",
+    "type": "rss",
+    "url": "https://krebsonsecurity.com/feed/",
+    "limit": 8,
+    "max_age_days": 14
+  },
+  {
+    "name": "BleepingComputer",
+    "platform": "blog",
+    "category": "Cybersecurity",
+    "type": "rss",
+    "url": "https://www.bleepingcomputer.com/feed/",
+    "limit": 8,
+    "max_age_days": 14
+  },
+  {
+    "name": "The Hacker News",
+    "platform": "blog",
+    "category": "Cybersecurity",
+    "type": "rss",
+    "url": "https://feeds.feedburner.com/TheHackersNews",
+    "limit": 8,
+    "max_age_days": 14
+  },
+  {
+    "name": "Dark Reading",
+    "platform": "blog",
+    "category": "Cybersecurity",
+    "type": "rss",
+    "url": "https://www.darkreading.com/rss.xml",
+    "limit": 8,
+    "max_age_days": 14
+  },
+  {
+    "name": "Schneier on Security",
+    "platform": "blog",
+    "category": "Cybersecurity",
+    "type": "rss",
+    "url": "https://www.schneier.com/feed/atom/",
+    "limit": 8,
+    "max_age_days": 14
+  },
+  {
+    "name": "CISA Advisories",
+    "platform": "blog",
+    "category": "Cybersecurity",
+    "type": "rss",
+    "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
+    "limit": 8,
+    "max_age_days": 14
+  },
+  {
+    "name": "Google Project Zero",
+    "platform": "blog",
+    "category": "Cybersecurity",
+    "type": "rss",
+    "url": "https://googleprojectzero.blogspot.com/feeds/posts/default",
+    "limit": 8,
+    "max_age_days": 14
+  },
+  {
+    "name": "Troy Hunt",
+    "platform": "blog",
+    "category": "Cybersecurity",
+    "type": "rss",
+    "url": "https://www.troyhunt.com/rss/",
+    "limit": 8,
+    "max_age_days": 14
+  },
+  {
+    "name": "SecurityWeek",
+    "platform": "blog",
+    "category": "Cybersecurity",
+    "type": "rss",
+    "url": "https://feeds.feedburner.com/securityweek",
+    "limit": 8,
+    "max_age_days": 14
+  },
+  {
+    "name": "CrowdStrike Blog",
+    "platform": "blog",
+    "category": "Cybersecurity",
+    "type": "rss",
+    "url": "https://www.crowdstrike.com/blog/feed",
+    "limit": 8,
+    "max_age_days": 14
+  },
+  {
+    "name": "Unit 42 (Palo Alto)",
+    "platform": "blog",
+    "category": "Cybersecurity",
+    "type": "rss",
+    "url": "https://unit42.paloaltonetworks.com/feed/",
+    "limit": 8,
+    "max_age_days": 14
+  },
+  {
+    "name": "Cisco Talos",
+    "platform": "blog",
+    "category": "Cybersecurity",
+    "type": "rss",
+    "url": "https://blog.talosintelligence.com/rss/",
+    "limit": 8,
+    "max_age_days": 14
+  }
+]

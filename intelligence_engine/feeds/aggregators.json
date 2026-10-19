@@ -1,0 +1,349 @@
+[
+  {
+    "name": "Global Technology News — United States",
+    "platform": "aggregator",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%28technology+OR+artificial+intelligence%29&hl=en-US&gl=US&ceid=US:en",
+    "limit": 8,
+    "max_age_days": 7,
+    "article_scrape_limit": 2,
+    "language": "en"
+  },
+  {
+    "name": "Global Technology News — United Kingdom",
+    "platform": "aggregator",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%28technology+OR+artificial+intelligence%29&hl=en-GB&gl=GB&ceid=GB:en",
+    "limit": 8,
+    "max_age_days": 7,
+    "article_scrape_limit": 2,
+    "language": "en"
+  },
+  {
+    "name": "Global Technology News — India",
+    "platform": "aggregator",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%28technology+OR+artificial+intelligence%29&hl=en-IN&gl=IN&ceid=IN:en",
+    "limit": 8,
+    "max_age_days": 7,
+    "article_scrape_limit": 2,
+    "language": "en"
+  },
+  {
+    "name": "Global Technology News — Japan",
+    "platform": "aggregator",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%28technology+OR+artificial+intelligence%29&hl=ja-JP&gl=JP&ceid=JP:ja",
+    "limit": 8,
+    "max_age_days": 7,
+    "article_scrape_limit": 2,
+    "language": "ja"
+  },
+  {
+    "name": "Global Technology News — Germany",
+    "platform": "aggregator",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%28technologie+OR+kunstliche+intelligenz%29&hl=de-DE&gl=DE&ceid=DE:de",
+    "limit": 8,
+    "max_age_days": 7,
+    "article_scrape_limit": 2,
+    "language": "de"
+  },
+  {
+    "name": "Global Technology News — France",
+    "platform": "aggregator",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%28technologie+OR+intelligence+artificielle%29&hl=fr-FR&gl=FR&ceid=FR:fr",
+    "limit": 8,
+    "max_age_days": 7,
+    "article_scrape_limit": 2,
+    "language": "fr"
+  },
+  {
+    "name": "Global Technology News — Brazil",
+    "platform": "aggregator",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%28tecnologia+OR+inteligencia+artificial%29&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+    "limit": 8,
+    "max_age_days": 7,
+    "article_scrape_limit": 2,
+    "language": "pt"
+  },
+  {
+    "name": "Global Technology News — South Africa",
+    "platform": "aggregator",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%28technology+OR+artificial+intelligence%29&hl=en-ZA&gl=ZA&ceid=ZA:en",
+    "limit": 8,
+    "max_age_days": 7,
+    "article_scrape_limit": 2,
+    "language": "en"
+  },
+  {
+    "name": "Global Technology News — Australia",
+    "platform": "aggregator",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%28technology+OR+artificial+intelligence%29&hl=en-AU&gl=AU&ceid=AU:en",
+    "limit": 8,
+    "max_age_days": 7,
+    "article_scrape_limit": 2,
+    "language": "en"
+  },
+  {
+    "name": "Global Technology News — Singapore",
+    "platform": "aggregator",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%28technology+OR+artificial+intelligence%29&hl=en-SG&gl=SG&ceid=SG:en",
+    "limit": 8,
+    "max_age_days": 7,
+    "article_scrape_limit": 2,
+    "language": "en"
+  },
+  {
+    "name": "Global Technology News — Pakistan",
+    "platform": "aggregator",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%28technology+OR+artificial+intelligence%29&hl=en-PK&gl=PK&ceid=PK:en",
+    "limit": 8,
+    "max_age_days": 7,
+    "article_scrape_limit": 2,
+    "language": "en"
+  },
+  {
+    "name": "Global Technology News — Canada",
+    "platform": "aggregator",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%28technology+OR+artificial+intelligence%29&hl=en-CA&gl=CA&ceid=CA:en",
+    "limit": 8,
+    "max_age_days": 7,
+    "article_scrape_limit": 2,
+    "language": "en"
+  },
+  {
+    "name": "Global Technology News — United Arab Emirates",
+    "platform": "aggregator",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%28technology+OR+artificial+intelligence%29&hl=en-AE&gl=AE&ceid=AE:en",
+    "limit": 8,
+    "max_age_days": 7,
+    "article_scrape_limit": 2,
+    "language": "en"
+  },
+  {
+    "name": "Global Technology News — Nigeria",
+    "platform": "aggregator",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%28technology+OR+artificial+intelligence%29&hl=en-NG&gl=NG&ceid=NG:en",
+    "limit": 8,
+    "max_age_days": 7,
+    "article_scrape_limit": 2,
+    "language": "en"
+  },
+  {
+    "name": "Global Technology News — Saudi Arabia",
+    "platform": "aggregator",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%28technology+OR+artificial+intelligence%29&hl=ar&gl=SA&ceid=SA:ar",
+    "limit": 8,
+    "max_age_days": 7,
+    "article_scrape_limit": 2,
+    "language": "ar"
+  },
+  {
+    "name": "Global Technology News — South Korea",
+    "platform": "aggregator",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%28technology+OR+artificial+intelligence%29&hl=ko&gl=KR&ceid=KR:ko",
+    "limit": 8,
+    "max_age_days": 7,
+    "article_scrape_limit": 2,
+    "language": "ko"
+  },
+  {
+    "name": "Global Technology News — Spain",
+    "platform": "aggregator",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%28tecnologia+OR+inteligencia+artificial%29&hl=es&gl=ES&ceid=ES:es",
+    "limit": 8,
+    "max_age_days": 7,
+    "article_scrape_limit": 2,
+    "language": "es"
+  },
+  {
+    "name": "Global Technology News — Italy",
+    "platform": "aggregator",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%28tecnologia+OR+intelligenza+artificiale%29&hl=it&gl=IT&ceid=IT:it",
+    "limit": 8,
+    "max_age_days": 7,
+    "article_scrape_limit": 2,
+    "language": "it"
+  },
+  {
+    "name": "Global Technology News — Indonesia",
+    "platform": "aggregator",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%28teknologi+OR+kecerdasan+buatan%29&hl=id&gl=ID&ceid=ID:id",
+    "limit": 8,
+    "max_age_days": 7,
+    "article_scrape_limit": 2,
+    "language": "id"
+  },
+  {
+    "name": "Global Technology News — Turkey",
+    "platform": "aggregator",
+    "category": "Global Technology News",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%28teknoloji+OR+yapay+zeka%29&hl=tr&gl=TR&ceid=TR:tr",
+    "limit": 8,
+    "max_age_days": 7,
+    "article_scrape_limit": 2,
+    "language": "tr"
+  },
+  {
+    "name": "Topic Aggregator — AI & LLM Releases",
+    "platform": "aggregator",
+    "category": "Topic Aggregators",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%28LLM+OR+%22AI+model%22+OR+%22new+model%22+release%29&hl=en-US&gl=US&ceid=US:en",
+    "limit": 8,
+    "max_age_days": 3,
+    "article_scrape_limit": 2
+  },
+  {
+    "name": "Topic Aggregator — Cybersecurity & Breaches",
+    "platform": "aggregator",
+    "category": "Topic Aggregators",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%28cybersecurity+OR+%22data+breach%22+OR+ransomware%29&hl=en-US&gl=US&ceid=US:en",
+    "limit": 8,
+    "max_age_days": 3,
+    "article_scrape_limit": 2
+  },
+  {
+    "name": "Topic Aggregator — Startup Funding",
+    "platform": "aggregator",
+    "category": "Topic Aggregators",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%28startup+funding+OR+%22Series+A%22+OR+%22Series+B%22+OR+acquisition%29+technology&hl=en-US&gl=US&ceid=US:en",
+    "limit": 8,
+    "max_age_days": 3,
+    "article_scrape_limit": 2
+  },
+  {
+    "name": "Topic Aggregator — Semiconductors & Chips",
+    "platform": "aggregator",
+    "category": "Topic Aggregators",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%28semiconductor+OR+GPU+OR+chip+OR+TSMC+OR+NVIDIA%29&hl=en-US&gl=US&ceid=US:en",
+    "limit": 8,
+    "max_age_days": 3,
+    "article_scrape_limit": 2
+  },
+  {
+    "name": "Topic Aggregator — Open Source",
+    "platform": "aggregator",
+    "category": "Topic Aggregators",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%28%22open+source%22+OR+github+OR+linux%29&hl=en-US&gl=US&ceid=US:en",
+    "limit": 8,
+    "max_age_days": 3,
+    "article_scrape_limit": 2
+  },
+  {
+    "name": "Topic Aggregator — Cloud Computing",
+    "platform": "aggregator",
+    "category": "Topic Aggregators",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%28%22cloud+computing%22+OR+AWS+OR+Azure+OR+%22Google+Cloud%22%29&hl=en-US&gl=US&ceid=US:en",
+    "limit": 8,
+    "max_age_days": 3,
+    "article_scrape_limit": 2
+  },
+  {
+    "name": "Topic Aggregator — Robotics & Automation",
+    "platform": "aggregator",
+    "category": "Topic Aggregators",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%28robotics+OR+humanoid+OR+automation%29&hl=en-US&gl=US&ceid=US:en",
+    "limit": 8,
+    "max_age_days": 3,
+    "article_scrape_limit": 2
+  },
+  {
+    "name": "Topic Aggregator — Quantum Computing",
+    "platform": "aggregator",
+    "category": "Topic Aggregators",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%28%22quantum+computing%22+OR+qubit%29&hl=en-US&gl=US&ceid=US:en",
+    "limit": 8,
+    "max_age_days": 3,
+    "article_scrape_limit": 2
+  },
+  {
+    "name": "Topic Aggregator — Software Releases & Updates",
+    "platform": "aggregator",
+    "category": "Topic Aggregators",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%28%22software+update%22+OR+%22new+version%22+OR+%22release+notes%22%29&hl=en-US&gl=US&ceid=US:en",
+    "limit": 8,
+    "max_age_days": 3,
+    "article_scrape_limit": 2
+  },
+  {
+    "name": "Topic Aggregator — Big Tech Layoffs & Earnings",
+    "platform": "aggregator",
+    "category": "Topic Aggregators",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%28layoffs+OR+earnings%29+%28Google+OR+Microsoft+OR+Meta+OR+Amazon+OR+Apple%29&hl=en-US&gl=US&ceid=US:en",
+    "limit": 8,
+    "max_age_days": 3,
+    "article_scrape_limit": 2
+  },
+  {
+    "name": "Bing News — AI",
+    "platform": "aggregator",
+    "category": "Topic Aggregators",
+    "type": "rss",
+    "url": "https://www.bing.com/news/search?q=artificial+intelligence&format=rss",
+    "limit": 8,
+    "max_age_days": 3
+  },
+  {
+    "name": "Bing News — Technology",
+    "platform": "aggregator",
+    "category": "Topic Aggregators",
+    "type": "rss",
+    "url": "https://www.bing.com/news/search?q=technology&format=rss",
+    "limit": 8,
+    "max_age_days": 3
+  },
+  {
+    "name": "Bing News — Cybersecurity",
+    "platform": "aggregator",
+    "category": "Topic Aggregators",
+    "type": "rss",
+    "url": "https://www.bing.com/news/search?q=cybersecurity&format=rss",
+    "limit": 8,
+    "max_age_days": 3
+  }
+]

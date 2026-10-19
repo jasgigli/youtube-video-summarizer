@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Wired AI & Tech",
+    "platform": "blog",
+    "category": "Deep Tech & Computing",
+    "type": "rss",
+    "url": "https://www.wired.com/feed/tag/ai/latest/rss",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "MIT Technology Review",
+    "platform": "blog",
+    "category": "Deep Tech & Computing",
+    "type": "rss",
+    "url": "https://www.technologyreview.com/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "IEEE Spectrum",
+    "platform": "blog",
+    "category": "Deep Tech & Computing",
+    "type": "rss",
+    "url": "https://spectrum.ieee.org/feeds/feed.rss",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Quanta Magazine",
+    "platform": "blog",
+    "category": "Deep Tech & Computing",
+    "type": "rss",
+    "url": "https://www.quantamagazine.org/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "The Quantum Insider",
+    "platform": "blog",
+    "category": "Deep Tech & Computing",
+    "type": "rss",
+    "url": "https://thequantuminsider.com/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "The Robot Report",
+    "platform": "blog",
+    "category": "Deep Tech & Computing",
+    "type": "rss",
+    "url": "https://www.therobotreport.com/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "SpaceNews",
+    "platform": "blog",
+    "category": "Deep Tech & Computing",
+    "type": "rss",
+    "url": "https://spacenews.com/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "NASA News",
+    "platform": "blog",
+    "category": "Deep Tech & Computing",
+    "type": "rss",
+    "url": "https://www.nasa.gov/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  }
+]

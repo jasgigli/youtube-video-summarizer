@@ -1,0 +1,317 @@
+[
+  {
+    "name": "Reddit r/LocalLLaMA",
+    "platform": "reddit",
+    "category": "Open Source AI & Models",
+    "type": "reddit_json",
+    "subreddit": "LocalLLaMA",
+    "url": "https://www.reddit.com/r/LocalLLaMA/hot.json?limit=10",
+    "limit": 10
+  },
+  {
+    "name": "Reddit r/MachineLearning",
+    "platform": "reddit",
+    "category": "Frontier AI Releases",
+    "type": "reddit_json",
+    "subreddit": "MachineLearning",
+    "url": "https://www.reddit.com/r/MachineLearning/hot.json?limit=10",
+    "limit": 10
+  },
+  {
+    "name": "Reddit r/programming",
+    "platform": "reddit",
+    "category": "Software & System Architecture",
+    "type": "reddit_json",
+    "subreddit": "programming",
+    "url": "https://www.reddit.com/r/programming/hot.json?limit=10",
+    "limit": 10
+  },
+  {
+    "name": "Reddit r/artificial",
+    "platform": "reddit",
+    "category": "AI News & Startups",
+    "type": "reddit_json",
+    "subreddit": "artificial",
+    "url": "https://www.reddit.com/r/artificial/hot.json?limit=10",
+    "limit": 10
+  },
+  {
+    "name": "Reddit r/technology",
+    "platform": "reddit",
+    "category": "Global Technology News",
+    "type": "reddit_json",
+    "subreddit": "technology",
+    "url": "https://www.reddit.com/r/technology/hot.json?limit=15",
+    "limit": 15
+  },
+  {
+    "name": "Reddit r/startups",
+    "platform": "reddit",
+    "category": "Startups & Venture Capital",
+    "type": "reddit_json",
+    "subreddit": "startups",
+    "url": "https://www.reddit.com/r/startups/hot.json?limit=15",
+    "limit": 15
+  },
+  {
+    "name": "Reddit r/opensource",
+    "platform": "reddit",
+    "category": "Open Source & Software",
+    "type": "reddit_json",
+    "subreddit": "opensource",
+    "url": "https://www.reddit.com/r/opensource/hot.json?limit=15",
+    "limit": 15
+  },
+  {
+    "name": "Reddit r/cybersecurity",
+    "platform": "reddit",
+    "category": "Cybersecurity",
+    "type": "reddit_json",
+    "subreddit": "cybersecurity",
+    "url": "https://www.reddit.com/r/cybersecurity/hot.json?limit=15",
+    "limit": 15
+  },
+  {
+    "name": "Reddit r/OpenAI",
+    "platform": "reddit",
+    "category": "Frontier AI Releases",
+    "type": "reddit_json",
+    "subreddit": "OpenAI",
+    "url": "https://www.reddit.com/r/OpenAI/hot.json?limit=10",
+    "limit": 10
+  },
+  {
+    "name": "Reddit r/ClaudeAI",
+    "platform": "reddit",
+    "category": "Frontier AI Releases",
+    "type": "reddit_json",
+    "subreddit": "ClaudeAI",
+    "url": "https://www.reddit.com/r/ClaudeAI/hot.json?limit=10",
+    "limit": 10
+  },
+  {
+    "name": "Reddit r/singularity",
+    "platform": "reddit",
+    "category": "AI News & Startups",
+    "type": "reddit_json",
+    "subreddit": "singularity",
+    "url": "https://www.reddit.com/r/singularity/hot.json?limit=10",
+    "limit": 10
+  },
+  {
+    "name": "Reddit r/Bard",
+    "platform": "reddit",
+    "category": "Frontier AI Releases",
+    "type": "reddit_json",
+    "subreddit": "Bard",
+    "url": "https://www.reddit.com/r/Bard/hot.json?limit=10",
+    "limit": 10
+  },
+  {
+    "name": "Reddit r/StableDiffusion",
+    "platform": "reddit",
+    "category": "Open Source AI & Models",
+    "type": "reddit_json",
+    "subreddit": "StableDiffusion",
+    "url": "https://www.reddit.com/r/StableDiffusion/hot.json?limit=10",
+    "limit": 10
+  },
+  {
+    "name": "Reddit r/datascience",
+    "platform": "reddit",
+    "category": "AI News & Startups",
+    "type": "reddit_json",
+    "subreddit": "datascience",
+    "url": "https://www.reddit.com/r/datascience/hot.json?limit=10",
+    "limit": 10
+  },
+  {
+    "name": "Reddit r/webdev",
+    "platform": "reddit",
+    "category": "Developer Tools & Open Source",
+    "type": "reddit_json",
+    "subreddit": "webdev",
+    "url": "https://www.reddit.com/r/webdev/hot.json?limit=10",
+    "limit": 10
+  },
+  {
+    "name": "Reddit r/devops",
+    "platform": "reddit",
+    "category": "Cloud Platforms & Infrastructure",
+    "type": "reddit_json",
+    "subreddit": "devops",
+    "url": "https://www.reddit.com/r/devops/hot.json?limit=10",
+    "limit": 10
+  },
+  {
+    "name": "Reddit r/selfhosted",
+    "platform": "reddit",
+    "category": "Developer Tools & Open Source",
+    "type": "reddit_json",
+    "subreddit": "selfhosted",
+    "url": "https://www.reddit.com/r/selfhosted/hot.json?limit=10",
+    "limit": 10
+  },
+  {
+    "name": "Reddit r/netsec",
+    "platform": "reddit",
+    "category": "Cybersecurity",
+    "type": "reddit_json",
+    "subreddit": "netsec",
+    "url": "https://www.reddit.com/r/netsec/hot.json?limit=10",
+    "limit": 10
+  },
+  {
+    "name": "Reddit r/hardware",
+    "platform": "reddit",
+    "category": "Big Tech & Hardware",
+    "type": "reddit_json",
+    "subreddit": "hardware",
+    "url": "https://www.reddit.com/r/hardware/hot.json?limit=10",
+    "limit": 10
+  },
+  {
+    "name": "Reddit r/gadgets",
+    "platform": "reddit",
+    "category": "Big Tech & Hardware",
+    "type": "reddit_json",
+    "subreddit": "gadgets",
+    "url": "https://www.reddit.com/r/gadgets/hot.json?limit=10",
+    "limit": 10
+  },
+  {
+    "name": "Reddit r/Android",
+    "platform": "reddit",
+    "category": "Big Tech & Hardware",
+    "type": "reddit_json",
+    "subreddit": "Android",
+    "url": "https://www.reddit.com/r/Android/hot.json?limit=10",
+    "limit": 10
+  },
+  {
+    "name": "Reddit r/apple",
+    "platform": "reddit",
+    "category": "Big Tech & Hardware",
+    "type": "reddit_json",
+    "subreddit": "apple",
+    "url": "https://www.reddit.com/r/apple/hot.json?limit=10",
+    "limit": 10
+  },
+  {
+    "name": "Reddit r/linux",
+    "platform": "reddit",
+    "category": "Developer Tools & Open Source",
+    "type": "reddit_json",
+    "subreddit": "linux",
+    "url": "https://www.reddit.com/r/linux/hot.json?limit=10",
+    "limit": 10
+  },
+  {
+    "name": "Reddit r/rust",
+    "platform": "reddit",
+    "category": "Developer Tools & Open Source",
+    "type": "reddit_json",
+    "subreddit": "rust",
+    "url": "https://www.reddit.com/r/rust/hot.json?limit=10",
+    "limit": 10
+  },
+  {
+    "name": "Reddit r/golang",
+    "platform": "reddit",
+    "category": "Developer Tools & Open Source",
+    "type": "reddit_json",
+    "subreddit": "golang",
+    "url": "https://www.reddit.com/r/golang/hot.json?limit=10",
+    "limit": 10
+  },
+  {
+    "name": "Reddit r/Python",
+    "platform": "reddit",
+    "category": "Developer Tools & Open Source",
+    "type": "reddit_json",
+    "subreddit": "Python",
+    "url": "https://www.reddit.com/r/Python/hot.json?limit=10",
+    "limit": 10
+  },
+  {
+    "name": "Reddit r/reactjs",
+    "platform": "reddit",
+    "category": "Developer Tools & Open Source",
+    "type": "reddit_json",
+    "subreddit": "reactjs",
+    "url": "https://www.reddit.com/r/reactjs/hot.json?limit=10",
+    "limit": 10
+  },
+  {
+    "name": "Reddit r/node",
+    "platform": "reddit",
+    "category": "Developer Tools & Open Source",
+    "type": "reddit_json",
+    "subreddit": "node",
+    "url": "https://www.reddit.com/r/node/hot.json?limit=10",
+    "limit": 10
+  },
+  {
+    "name": "Reddit r/robotics",
+    "platform": "reddit",
+    "category": "Deep Tech & Computing",
+    "type": "reddit_json",
+    "subreddit": "robotics",
+    "url": "https://www.reddit.com/r/robotics/hot.json?limit=10",
+    "limit": 10
+  },
+  {
+    "name": "Reddit r/Futurology",
+    "platform": "reddit",
+    "category": "Deep Tech & Computing",
+    "type": "reddit_json",
+    "subreddit": "Futurology",
+    "url": "https://www.reddit.com/r/Futurology/hot.json?limit=10",
+    "limit": 10
+  },
+  {
+    "name": "Reddit r/ExperiencedDevs",
+    "platform": "reddit",
+    "category": "Software & System Architecture",
+    "type": "reddit_json",
+    "subreddit": "ExperiencedDevs",
+    "url": "https://www.reddit.com/r/ExperiencedDevs/hot.json?limit=10",
+    "limit": 10
+  },
+  {
+    "name": "Reddit r/cscareerquestions",
+    "platform": "reddit",
+    "category": "Tech Careers",
+    "type": "reddit_json",
+    "subreddit": "cscareerquestions",
+    "url": "https://www.reddit.com/r/cscareerquestions/hot.json?limit=10",
+    "limit": 10
+  },
+  {
+    "name": "Reddit r/learnprogramming",
+    "platform": "reddit",
+    "category": "Developer Tools & Open Source",
+    "type": "reddit_json",
+    "subreddit": "learnprogramming",
+    "url": "https://www.reddit.com/r/learnprogramming/hot.json?limit=10",
+    "limit": 10
+  },
+  {
+    "name": "Reddit r/SaaS",
+    "platform": "reddit",
+    "category": "Startups & Venture Capital",
+    "type": "reddit_json",
+    "subreddit": "SaaS",
+    "url": "https://www.reddit.com/r/SaaS/hot.json?limit=10",
+    "limit": 10
+  },
+  {
+    "name": "Reddit r/pakistan",
+    "platform": "reddit",
+    "category": "Regional Tech News",
+    "type": "reddit_json",
+    "subreddit": "pakistan",
+    "url": "https://www.reddit.com/r/pakistan/hot.json?limit=10",
+    "limit": 10
+  }
+]

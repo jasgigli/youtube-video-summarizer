@@ -1,0 +1,164 @@
+[
+  {
+    "name": "Microsoft Official Technology News",
+    "platform": "big_tech",
+    "category": "Big Tech & Cloud",
+    "type": "rss",
+    "url": "https://blogs.microsoft.com/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Microsoft Azure Blog",
+    "platform": "big_tech",
+    "category": "Big Tech & Cloud",
+    "type": "rss",
+    "url": "https://azure.microsoft.com/en-us/blog/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Microsoft Security Blog",
+    "platform": "big_tech",
+    "category": "Big Tech & Cloud",
+    "type": "rss",
+    "url": "https://www.microsoft.com/en-us/security/blog/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Google Developers Blog",
+    "platform": "big_tech",
+    "category": "Big Tech & Cloud",
+    "type": "rss",
+    "url": "https://developers.googleblog.com/feeds/posts/default",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Android Developers Blog",
+    "platform": "big_tech",
+    "category": "Big Tech & Cloud",
+    "type": "rss",
+    "url": "https://android-developers.googleblog.com/atom.xml",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Chrome Developers Blog",
+    "platform": "big_tech",
+    "category": "Big Tech & Cloud",
+    "type": "rss",
+    "url": "https://developer.chrome.com/static/blog/feed.xml",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Chrome Releases",
+    "platform": "big_tech",
+    "category": "Big Tech & Cloud",
+    "type": "rss",
+    "url": "https://chromereleases.googleblog.com/feeds/posts/default",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Google Cloud Release Notes",
+    "platform": "big_tech",
+    "category": "Big Tech & Cloud",
+    "type": "rss",
+    "url": "https://cloud.google.com/feeds/gcp-release-notes.xml",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Meta Engineering",
+    "platform": "big_tech",
+    "category": "Big Tech & Cloud",
+    "type": "rss",
+    "url": "https://engineering.fb.com/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Amazon Science",
+    "platform": "big_tech",
+    "category": "Big Tech & Cloud",
+    "type": "rss",
+    "url": "https://www.amazon.science/index.rss",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "AWS News Blog",
+    "platform": "big_tech",
+    "category": "Big Tech & Cloud",
+    "type": "rss",
+    "url": "https://aws.amazon.com/blogs/aws/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "IBM Blog",
+    "platform": "big_tech",
+    "category": "Big Tech & Cloud",
+    "type": "rss",
+    "url": "https://www.ibm.com/blog/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Salesforce News",
+    "platform": "big_tech",
+    "category": "Big Tech & Cloud",
+    "type": "rss",
+    "url": "https://www.salesforce.com/news/feed/",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Samsung Global Newsroom",
+    "platform": "big_tech",
+    "category": "Big Tech & Cloud",
+    "type": "rss",
+    "url": "https://news.samsung.com/global/feed",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Intel Newsroom",
+    "platform": "big_tech",
+    "category": "Big Tech & Cloud",
+    "type": "rss",
+    "url": "https://newsroom.intel.com/feed",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Apple Newsroom",
+    "platform": "big_tech",
+    "category": "Big Tech & Hardware",
+    "type": "rss",
+    "url": "https://www.apple.com/newsroom/rss-feed.rss",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "Apple Developer News",
+    "platform": "big_tech",
+    "category": "Big Tech & Hardware",
+    "type": "rss",
+    "url": "https://developer.apple.com/news/rss/news.rss",
+    "limit": 8,
+    "max_age_days": 30
+  },
+  {
+    "name": "AWS What's New",
+    "platform": "big_tech",
+    "category": "Cloud Platforms & Infrastructure",
+    "type": "rss",
+    "url": "https://aws.amazon.com/new/feed/",
+    "limit": 8,
+    "max_age_days": 14
+  }
+]
