@@ -1,0 +1,17 @@
+📢 **TECH & AI INTELLIGENCE UPDATE: Itaú Deploys Generative AI Across Entire Customer Base Using OpenAI**
+> Latin America's Itaú Unibanco has implemented an 'AI First' strategy, deploying generative AI to its entire customer base and workforce. Utilizing the conversational interface ia.i and the IARA governance platform, the institution successfully scales AI in one of the region's most heavily regulated sectors.
+
+**🔬 Key Highlights:**
+• Deployment of ia.i, a scalable conversational interface built for customers and employees.
+• Introduction of IARA, a dedicated governance platform to oversee and secure AI operations.
+• Implementation within a highly regulated financial sector, ensuring compliance and data security.
+
+**💬 Community Reaction:**
+• Interest in how large banks handle strict regulatory compliance while adopting frontier AI models.
+• Curiosity regarding the architectural choices behind the ia.i interface and IARA governance layer.
+
+**⚡ Engineering Takeaways:**
+• Adoption of conversational interfaces for universal customer and employee enablement.
+• Implementation of custom governance and oversight platforms (IARA) for LLM deployments in banking.
+
+*Ingested from: OpenAI Research & News*
