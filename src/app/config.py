@@ -49,6 +49,10 @@ class Settings(BaseSettings):
     FILTER_OUT_SHORTS: bool = True
     FILTER_OUT_LIVE_STREAMS: bool = True
     
+    # Global Tech Feeds & News Monitoring
+    ENABLE_MULTI_SOURCE_MONITORING: bool = True
+    FEEDS_CONFIG_PATH: Path = BASE_DIR / "feeds.json"
+    
     # Social Media Content Generation & Notifications
     ENABLE_AUDIO_PODCAST: bool = False
     ENABLE_SOCIAL_POST_EXPORT: bool = True
