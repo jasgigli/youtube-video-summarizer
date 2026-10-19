@@ -19,17 +19,27 @@ DATA_DIR.mkdir(parents=True, exist_ok=True)
 SUMMARIES_DIR = WORKSPACE_ROOT / "summaries" if (WORKSPACE_ROOT / "summaries").exists() else BASE_DIR / "summaries"
 SUMMARIES_DIR.mkdir(parents=True, exist_ok=True)
 
+# Feeds directory — prefer workspace-level feeds/, fall back to src-level
+FEEDS_DIR = WORKSPACE_ROOT / "feeds" if (WORKSPACE_ROOT / "feeds").exists() else BASE_DIR / "feeds"
 
 
+class Settings(BaseSettings):
+    """Application-wide configuration loaded from environment and .env file."""
 
-    
-   
-    
+    APP_NAME: str = "Tech & AI Omnichannel Intelligence Engine"
+    VERSION: str = "2.0.0"
+    DEBUG: bool = False
+
+    # Paths
+    DATA_PATH: Path = DATA_DIR
+    DATABASE_URL: str = f"sqlite:///{DATA_DIR / 'app.db'}"
+    SUMMARIES_PATH: Path = SUMMARIES_DIR
+
     # YouTube Configuration
     YOUTUBE_API_KEY: str = ""
     MAX_VIDEOS_PER_CHANNEL_SYNC: int = 1
     REQUEST_TIMEOUT_SECONDS: int = 15
-    
+
     # LLM Settings
     DEFAULT_PROVIDER: str = "gemini"  # "gemini" | "openai" | "anthropic" | "ollama" | "mock"
     GEMINI_API_KEY: str = ""
@@ -43,20 +53,19 @@ SUMMARIES_DIR.mkdir(parents=True, exist_ok=True)
     DEFAULT_MODEL_OPENAI: str = "gpt-4o-mini"
     DEFAULT_MODEL_ANTHROPIC: str = "claude-3-5-haiku-20241022"
     DEFAULT_MODEL_OLLAMA: str = "llama3.2"
-    
+
     # Automation & Scheduler
     ENABLE_SCHEDULER: bool = True
     SYNC_INTERVAL_HOURS: int = 2  # Checks every 2 hours
-    
+
     # Advanced Content Filters
     FILTER_OUT_SHORTS: bool = True
     FILTER_OUT_LIVE_STREAMS: bool = True
-    
+
     # Global Tech Feeds & News Monitoring
     ENABLE_MULTI_SOURCE_MONITORING: bool = True
-    FEEDS_CONFIG_PATH: Path = BASE_DIR / "feeds"
-    
-  
+    FEEDS_CONFIG_PATH: Path = FEEDS_DIR
+
     # SaaS 4-Tier Pricing & Limits
     TIER_FREE_PRICE: float = 0.0
     TIER_FREE_DAILY_SOCIAL_COPIES: int = 3
@@ -74,7 +83,7 @@ SUMMARIES_DIR.mkdir(parents=True, exist_ok=True)
     TIER_B2B_DEFAULT_RATE_LIMIT_PER_MIN: int = 60
 
     ARCHIVE_AFTER_DAYS: int = 14
-    
+
     # CORS
     CORS_ORIGINS: List[str] = [
         "http://localhost:5173",

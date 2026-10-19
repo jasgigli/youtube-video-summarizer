@@ -2,8 +2,10 @@ import uuid
 import asyncio
 import hashlib
 import json
-from datetime import datetime, timedelta, timezone
+import re as _re
+from datetime import datetime, timedelta, timezone, date
 from typing import Dict, Any, List, Set, Optional
+from pathlib import Path
 from fastapi import WebSocket
 from sqlalchemy.orm import Session
 
@@ -376,6 +378,20 @@ class JobService:
                         or (item.published_at.replace(tzinfo=timezone.utc)
                             if item.published_at.tzinfo is None else item.published_at) >= cutoff
                     ]
+
+                # ── TODAY-ONLY FILTER ──────────────────────────────────────
+                # Only keep items published today (from 00:00 UTC of current date).
+                # Items without a published_at are kept (age is unknown).
+                today_midnight_utc = datetime.combine(date.today(), datetime.min.time(), tzinfo=timezone.utc)
+                items = [
+                    item for item in items
+                    if item.published_at is None
+                    or (
+                        item.published_at.replace(tzinfo=timezone.utc)
+                        if item.published_at.tzinfo is None
+                        else item.published_at
+                    ) >= today_midnight_utc
+                ]
                 return cfg.get("name", cfg.get("url", "Unknown source")), items
             except Exception as e:
                 logger.exception(f"Error ingesting feed {cfg.get('name')}: {e}")
@@ -439,6 +455,19 @@ class JobService:
             )
 
             for idx, (cluster, signature) in enumerate(changed_clusters, 1):
+                # ── SKIP ALREADY-SUMMARIZED TOPICS ──────────────────────
+                # Check if a markdown file already exists on disk for this
+                # cluster (same cluster-id or matching title). Avoids
+                # duplicate work when the same story appears across feeds.
+                if cls._cluster_summary_exists_on_disk(cluster):
+                    cluster_signatures[cluster.cluster_id] = signature
+                    job.append_log(
+                        f"Summary already exists for '{cluster.canonical_title[:45]}'. Skipping.",
+                        "INFO"
+                    )
+                    db.commit()
+                    continue
+
                 job.current_step = (
                     f"Summarizing {platform} feed [{idx}/{len(changed_clusters)}]: "
                     f"{cluster.canonical_title[:45]}..."
@@ -503,6 +532,11 @@ class JobService:
             job.append_log(f"Daily Brief notice: {brief_err}", "WARNING")
 
         job.current_step = "Omnichannel Pipeline Completed Successfully."
+        job.append_log(
+            f"Pipeline done. Today's date: {date.today().isoformat()}. "
+            f"Processed {job.processed_items} topic(s), skipped/errored {job.failed_items}.",
+            "INFO"
+        )
         db.commit()
 
     @classmethod
@@ -794,3 +828,35 @@ class JobService:
             "timestamp": datetime.utcnow().isoformat() + "Z"
         }
         await ws_manager.broadcast(payload)
+
+    @classmethod
+    def _cluster_summary_exists_on_disk(cls, cluster: TopicCluster) -> bool:
+        """Returns True when an .md file already exists for *cluster* in today's date folder.
+
+        Detection methods:
+        1. An HTML comment ``<!-- cluster-id: <id> -->`` inside an existing file.
+        2. A filename that closely matches the sanitized canonical title.
+        """
+        from src.app.services.markdown_storage_service import MarkdownStorageService
+
+        today_folder = settings.SUMMARIES_PATH / date.today().isoformat()
+        if not today_folder.exists():
+            return False
+
+        marker = f"<!-- cluster-id: {cluster.cluster_id} -->"
+        clean_title = MarkdownStorageService.sanitize_filename(cluster.canonical_title).lower()
+
+        for md_file in today_folder.glob("*.md"):
+            if md_file.name in ("DAILY_BRIEF.md", "INDEX.md"):
+                continue
+            try:
+                content = md_file.read_text(encoding="utf-8", errors="replace")
+                # Method 1: cluster-id marker match
+                if marker in content:
+                    return True
+                # Method 2: filename match (case-insensitive)
+                if clean_title and clean_title == md_file.stem.lower():
+                    return True
+            except Exception:
+                continue
+        return False
